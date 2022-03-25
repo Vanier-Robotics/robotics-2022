@@ -4,6 +4,11 @@
     margin-bottom: 10px;
 }
 
+
+.contents {
+    display: flex;
+}
+
 .cadContainer {
     top: 0;
     position: sticky;
@@ -11,9 +16,6 @@
 }
 
 .ArcanumR {
-    overflow-y: auto;
-    height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
