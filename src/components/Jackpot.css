@@ -8,11 +8,7 @@
 }
 
 .Jackpot {
-    width: 100vw;
-    height: 100vh;
     background: url('../assets/media/images/alice_13.png') no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     overflow: hidden;
     display: flex;
     flex-direction: column;

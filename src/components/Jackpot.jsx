@@ -5,7 +5,7 @@ import './Jackpot.css';
 function Jackpot(props) {
     
     return (
-        <div className="Jackpot">
+        <div className="Jackpot page">
             <h2>{props.t('partners')}</h2>
 
             <a className="VCSAWrapper" rel="noreferrer" target="_blank" href="https://www.vcsavanier.com/">

@@ -4,7 +4,7 @@ import { withNamespaces } from "react-i18next";
 
 function Vaniercollege(props) {
 	return (
-		<div className="Vaniercollege">
+		<div className="Vaniercollege page">
 
             <h1>{props.t('VC')}</h1>
 

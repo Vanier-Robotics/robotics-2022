@@ -4,7 +4,7 @@ import './Arcanum.css';
 
 function Arcanum(props) {
     return (
-        <div className="Arcanum">
+        <div className="Arcanum page">
             <span className="span" >
                 <h1 className="titleArcanum" >{props.t('Arcanum')}</h1>
             </span>

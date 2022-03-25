@@ -5,7 +5,7 @@ import './Robot.css'
 function Robot(props) {
     return (
         <>
-            <div className="ArcanumR">
+            <div className="ArcanumR page">
                 <span className="span" >
                     <h1 className="titleR" >{props.t('Robot')}</h1>
                 </span>

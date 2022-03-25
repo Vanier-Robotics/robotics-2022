@@ -277,7 +277,7 @@ function Characters(props) {
     ];
 
     return (
-        <div className="Characters" >
+        <div className="Characters page" >
             {/* <h1 style={{margin: `0px`, height: `10%`}} >Our Characters</h1> */}
             <div className="cards">
                 {/* {captainCards} */}

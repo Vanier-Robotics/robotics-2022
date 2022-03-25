@@ -8,7 +8,7 @@ function Transition1(props) {
     
 
   return (
-    <div className="Transition1">
+    <div className="Transition1 page">
         <div>
             <div className="continue-text">
                 <h1>Are you sure you want to continue?</h1>
