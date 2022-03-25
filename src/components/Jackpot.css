@@ -3,6 +3,7 @@
 }
 
 .VCSAWrapper, .VCWrapper, .CRCWrapper {
+    float: left;
     height: 20%;
     margin-bottom: 70px;
 }

@@ -36,15 +36,15 @@ function Menu({ t }) {
         {
             to: "/journey",
             name: t('Journey'),
-            src: require("../assets/media/images/pinkcup_f.png"),
-            wsrc: require("../assets/media/images/teacup_w.png"),
+            src: require("../assets/media/images/watch_f.png"),
+            wsrc: require("../assets/media/images/watch_w.png"),
             alt: "pinkcup"
         },
         {
             to: "/robot",
             name: t('Robot'),
-            src: require("../assets/media/images/watch_f.png"),
-            wsrc: require("../assets/media/images/watch_w.png"),
+            src: require("../assets/media/images/pinkcup_f.png"),
+            wsrc: require("../assets/media/images/teacup_w.png"),
             alt: "watch"
         },
         {

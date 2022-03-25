@@ -6,6 +6,7 @@ import MediaContent from './MediaContent';
 function hide() {
     document.getElementById('staticRabbit').style.display = 'none';
     document.getElementById('downRabbit').style.display = 'block';
+    document.getElementById('downRabbit').style.marginBottom = `20px`;
 }
 function show() {
     document.getElementById('staticRabbit').style.display = 'block';
@@ -15,7 +16,7 @@ function show() {
 function Journey(props) {
     var pairs = [
         {
-            content: props.t('placeholder-medium'),
+            content: props.t('vickytest'),
             media: require("../assets/media/images/teapot_f.png"),
             alt: "Media here",
         },
@@ -44,9 +45,12 @@ function Journey(props) {
                 }
                 <button style={{marginBottom: `50px`}} onClick={() => {
                     props.showSidebar();
+                    //bg transparent for bunny and disappears when clicked
+                    document.getElementById('staticRabbit').style.display = 'none';
+                    document.getElementById('downRabbit').style.display = 'none';
                     setTimeout(() => {
                         document.getElementById('gallery').style.display = 'block';
-                    } , 2500);
+                    } , 1500);
                 }} >
                     <span onMouseOver={hide} onMouseOut={show} style={{width: `100%`, display: `flex`, flexDirection: `column`, margin: `0`}}>
                         <img id='staticRabbit' width="100px" src={require("../assets/media/images/rabbit.png")} alt="UpRabbit"/>

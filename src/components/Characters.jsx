@@ -287,6 +287,7 @@ function Characters(props) {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
+                <></>
                 <br/><br/><br/>
                 <h1>{props.t("Build Team: ")}</h1>
                 {
@@ -329,7 +330,9 @@ function Characters(props) {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
-                
+                <br/><br/><br/>
+                <h1>{props.t("Mentor: ")}</h1>
+                <CharacterCard front={require('../assets/media/images/members/fronts/mentor/f_Ashley.png')} back={require('../assets/media/images/members/backs/b_Ashley.png')} alt={"Ashley"} />
 
             </div>
         </div>

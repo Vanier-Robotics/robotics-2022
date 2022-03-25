@@ -17,10 +17,11 @@
 }
 
 .contentBlurb {
-    background-color: rgb(108, 0, 180, 0.2);
+    background-color: rgba(68, 56, 139, 0.877);
     width: 50%;
-    border-radius: 20px;
+    border-radius: 100px;
     height: 400px;
+    padding-top: 25px;
     overflow-y: scroll;
 }
 

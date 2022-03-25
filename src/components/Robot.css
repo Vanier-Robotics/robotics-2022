@@ -1,4 +1,4 @@
-.robot1, .robot2, .robot3 {
+/* .robot1, .robot2, .robot3 {
     width: 100%;
     height: 30vh;
     margin-bottom: 10px;
@@ -8,27 +8,56 @@
     top: 0;
     position: sticky;
     position: -webkit-sticky;
-}
+} */
 
-.ArcanumR {
+.Robot {
+    background: url("../assets/media/images/vanierland.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     overflow-y: auto;
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 30px;
+    color: #fff;
 }
 
-.cadPaneR {
+.Robot > div:nth-child(3), .Robot > div:nth-child(14){
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.Robot > div:nth-child(3) > img {
+    width: 50%;
+}
+.Robot > div:nth-child(14) > img {
+    width: 30%;
+}
+
+@media (max-width: 500px) {
+    .Robot > div:nth-child(3) > img, .Robot > div:nth-child(14) > img {
+        width: 100%;
+    }
+}
+
+/* .Robot > iframe {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 500px;
+} */
+
+/* .cadPaneR {
     flex: 45%;
 }
 .contentPaneR {
     flex: 55%;
     margin: 0px, 20px, 0px;
-}
+} */
 
-@media (max-width: 850px) {
+/* @media (max-width: 850px) {
     .cadPaneR, .contentPaneR {
         flex-direction: column;
     }
-}
+} */
