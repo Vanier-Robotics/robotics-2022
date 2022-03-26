@@ -7,6 +7,21 @@ function Jackpot(props) {
     return (
         <div className="Jackpot">
             <h2>{props.t('partners')}</h2>
+            <div>
+                <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('j1')}</p>
+            </div>
+            <div>
+                <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('j2')}</p>
+            </div>
+            <div>
+                <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('j3')}</p>
+            </div>
+            <div>
+                <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('j4')}</p>
+            </div>
+            <div>
+                <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('j5')}</p>
+            </div>
 
             <a className="VCSAWrapper" rel="noreferrer" target="_blank" href="https://www.vcsavanier.com/">
                 <img className="vcsa" alt="title here" src={require("../assets/media/images/VCSA.png")}/>
