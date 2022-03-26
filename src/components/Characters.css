@@ -4,6 +4,7 @@
     background: url("../assets/media/images/BG4characters.png") no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .cards {

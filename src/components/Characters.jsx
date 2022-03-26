@@ -1,22 +1,23 @@
 import React from "react";
 import { withNamespaces } from 'react-i18next';
 import "./Characters.css"
+import CharacterCard from "./CharacterCard";
 
-function CharacterCard(props) {
-    return (
-        <div className="flip-card">
-            <div className="flip-card-inner">
-                <div className="flip-card-front">
-                    <img src={props.front} alt={props.alt}/>                    
-                </div>
+// function CharacterCard(props) {
+//     return (
+//         <div className="flip-card">
+//             <div className="flip-card-inner">
+//                 <div className="flip-card-front">
+//                     <img src={props.front} alt={props.alt}/>                    
+//                 </div>
 
-                <div className="flip-card-back">
-                    <img src={props.back} alt={props.alt}/>
-                </div>
-            </div>
-        </div>
-    );
-}
+//                 <div className="flip-card-back">
+//                     <img src={props.back} alt={props.alt}/>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }
 
 function Characters(props) {
 
@@ -278,16 +279,14 @@ function Characters(props) {
 
     return (
         <div className="Characters" >
-            {/* <h1 style={{margin: `0px`, height: `10%`}} >Our Characters</h1> */}
             <div className="cards">
-                {/* {captainCards} */}
                 <h1>{props.t("Captains: ")}</h1>
                 {
                     captains.map((i) => {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
-                <></>
+                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c2h')}</u></em></b><br/><br/>{props.t('c2')}</p>
                 <br/><br/><br/>
                 <h1>{props.t("Build Team: ")}</h1>
                 {
@@ -295,6 +294,7 @@ function Characters(props) {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
+                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c3h')}</u></em></b><br/><br/>{props.t('c3')}</p>
                 <br/><br/><br/>
                 <h1>{props.t("Programming Team: ")}</h1>
                 {
@@ -302,6 +302,7 @@ function Characters(props) {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
+                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c4h')}</u></em></b><br/><br/>{props.t('c4')}</p>
                 <br/><br/><br/>
                 <h1>{props.t("Kiosk Team: ")}</h1>
                 {
@@ -309,6 +310,7 @@ function Characters(props) {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
+                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c5h')}</u></em></b><br/><br/>{props.t('c5')}</p>
                 <br/><br/><br/>
                 <h1>{props.t("Website Team: ")}</h1>
                 {
@@ -316,6 +318,7 @@ function Characters(props) {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
+                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c6h')}</u></em></b><br/><br/>{props.t('c6')}</p>
                 <br/><br/><br/>
                 <h1>{props.t("Journalism Team: ")}</h1>
                 {
@@ -323,6 +326,7 @@ function Characters(props) {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
+                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c8h')}</u></em></b><br/><br/>{props.t('c8')}</p>
                 <br/><br/><br/>
                 <h1>{props.t("Video Team: ")}</h1>
                 {
@@ -330,10 +334,12 @@ function Characters(props) {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
+                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c7h')}</u></em></b><br/><br/>{props.t('c7')}</p>
                 <br/><br/><br/>
                 <h1>{props.t("Mentor: ")}</h1>
                 <CharacterCard front={require('../assets/media/images/members/fronts/mentor/f_Ashley.png')} back={require('../assets/media/images/members/backs/b_Ashley.png')} alt={"Ashley"} />
-
+                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c1h')}</u></em></b><br/><br/>{props.t('c1')}</p>
+                <br/><br/><br/>
             </div>
         </div>
     );

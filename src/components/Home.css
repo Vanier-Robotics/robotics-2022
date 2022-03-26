@@ -69,7 +69,9 @@
 
 
 
-
+h1 {
+    font-family:lucida sans unicode;
+}
 
 
 
@@ -153,5 +155,5 @@ h3 {
 
 
 #hi {
-    font-family: 'Spirax', cursive;
+    font-family: ''Alice', serif', cursive;
 } */

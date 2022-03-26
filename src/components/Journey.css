@@ -21,7 +21,7 @@
     width: 50%;
     border-radius: 100px;
     height: 400px;
-    padding-top: 25px;
+    padding: 30px;
     overflow-y: scroll;
 }
 

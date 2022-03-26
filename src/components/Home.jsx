@@ -38,9 +38,7 @@ function Home(props) {
                     </Link>
                 </div>
                 <div className="row2" >
-                    <a href="https://www.alice-in-wonderland.net/" target="_blank" rel="noreferrer" >
-                        <img className="title" alt="title here" src={require("../assets/media/images/title1.png")}/>
-                    </a>
+                    <img className="title" alt="title here" src={require("../assets/media/images/title1.png")}/>
                 </div>
                 <div className="row3" >
                     <Link onMouseOver={hide} onMouseOut={show} onClick={toFr} to="/menu">
