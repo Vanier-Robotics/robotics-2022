@@ -37,7 +37,7 @@ function Robot(props) {
                 </div> */}
 
                 <div>
-                    <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('vickytest')}</p>
+                    <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('r1')}</p>
                 </div>
                 <div>
                     <img id='staticRabbit' width="100px" src={require("../assets/media/images/teapot_f.png")} alt="UpRabbit"/>
@@ -45,13 +45,13 @@ function Robot(props) {
                 </div>
 
                 <div>
-                    <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('vickytest')}</p>
+                    <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('r2')} <br/><br/> {props.t('drivetrain')} <br/> {props.t('input')} <br/> {props.t('reservoir')} <br/> {props.t('output')}</p>
                 </div>
                 <div>
-                    <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('vickytest')}</p>
+                    <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('r3')} <br/><br/> {props.t('r4')} <br/><br/> {props.t('r5')} <br/><br/> {props.t('r6')}</p>
                 </div>
                 <div>
-                    <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('vickytest')}</p>
+                    <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('r7')}</p>
                 </div>
                 <div>
                     <iframe 
@@ -66,10 +66,10 @@ function Robot(props) {
                 </div>
                 
                 <div>
-                    <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('vickytest')}</p>
+                    <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('r8')}</p>
                 </div>
                 <div>
-                    <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('vickytest')}</p>
+                    <p style={{width: `60%`, marginRight: `auto`, marginLeft: `auto`}} >{props.t('r9')}</p>
                 </div>
 
                 <div>

@@ -23,6 +23,12 @@
     color: #fff;
 }
 
+.Robot > div > p {
+    background-color: rgba(68, 56, 139, 0.877);
+    padding: 40px 0px 40px;
+    border-radius: 100px;
+}
+
 .Robot > div:nth-child(3), .Robot > div:nth-child(14){
     margin-left: auto;
     margin-right: auto;
@@ -31,6 +37,13 @@
 .Robot > div:nth-child(3) > img {
     width: 50%;
 }
+
+.Robot > div:nth-child(4) {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .Robot > div:nth-child(14) > img {
     width: 30%;
 }
