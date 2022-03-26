@@ -1,23 +1,28 @@
 .Arcanum {
+    background: url("../assets/media/images/alice_13.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     overflow-y: auto;
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
 }
-
+.Arcanum > div > p, .Arcanum > div > div > p {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
 .span {
     width: 100vw;
     margin: 0;
 }
 .titleArcanum {
-    margin-bottom: 0;
+    margin: 0;
 }
-
 .cadPane {
     flex: 45%;
 }
-
 .playingField {
     top: 25%;
     width: 95%;
@@ -29,7 +34,6 @@
     flex: 55%;
     margin: 0px, 20px, 0px;
 }
-
 @media (max-width: 850px) {
     .cadPane, .contentPane {
         flex-direction: column;

@@ -34,6 +34,16 @@
     width: 50%;
 } */
 
+.Vaniercollege > div > p {
+    background-color: rgba(68, 56, 139, 0.877);
+    padding: 40px 0px 40px;
+    border-radius: 100px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 .mediaBlurb > img {
     width: 75%;
 }

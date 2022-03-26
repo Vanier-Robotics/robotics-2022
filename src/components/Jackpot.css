@@ -3,20 +3,29 @@
 }
 
 .VCSAWrapper, .VCWrapper, .CRCWrapper {
-    float: left;
+    /* float: left; */
     height: 20%;
     margin-bottom: 70px;
 }
-
+.Jackpot > div > p {
+    background-color: rgba(68, 56, 139, 0.877);
+    padding: 40px 0px 40px;
+    border-radius: 100px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
 .Jackpot {
     width: 100vw;
     height: 100vh;
-    background: url('../assets/media/images/alice_13.png') no-repeat;
+    background: url('../assets/media/images/alice_13_r.png') no-repeat;
     background-size: cover;
     background-attachment: fixed;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    justify-content: right;
+    float: right;
 }
 
 @media (max-width: 685px) {
