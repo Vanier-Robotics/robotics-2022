@@ -351,7 +351,12 @@ function Characters(props) {
             {/* <h1 style={{margin: `0px`, height: `10%`}} >Our Characters</h1> */}
             <div className="cards">
                 {
-                teams.map((t) => {return (<Team title={t.title} header={t.header} members={t.members} pheader={t.pheader} p={t.p}/>);})}
+                    teams.map((t) => {
+                        return (
+                            <Team title={t.title} header={t.header} members={t.members} pheader={t.pheader} p={t.p}/>
+                        );
+                    })
+                }
             </div>
         </div>
     );

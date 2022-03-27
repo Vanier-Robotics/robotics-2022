@@ -1,17 +1,8 @@
 import React from 'react';
 
 export default function MediaContent(props) {
-    var mediajsx = null, media2jsx = null;
-    if(props.media === "0") {
-        mediajsx = <></>;
-    } else {
-        mediajsx = <img src={props.media} alt={props.alt}/>;
-    }
-    if(props.media2 === "0") {
-        media2jsx = <></>;
-    } else {
-        media2jsx = <img id='media2' src={props.media2} alt={props.alt}/>;
-    }
+    var mediajsx = populateJsx(props, 1);
+    var media2jsx = populateJsx(props, 2);
     return (
         <div className='pairs'>
             <div className='contentBlurb'>
@@ -25,4 +16,35 @@ export default function MediaContent(props) {
 
         </div>
     );
+}
+
+const populateJsx = (props, id) => {
+    var ret = null;
+    switch (id) {
+        case 1:
+            if (props.media === "0") {
+                ret = <></>;
+            } else {
+                ret = <img src={props.media} alt={props.alt}/>;
+            }
+            break;
+        case 2:
+            if (props.media2 === "0" && props.vid !== "0") {
+                ret = <iframe 
+                        src={props.vid} 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                        </iframe>;
+            } else if (props.media2 === "0" && props.vid === "0") {
+                ret = <></>;
+            } else {
+                ret = <img src={props.media2} alt={props.alt}/>;
+            }
+            break;
+        default:
+            break;
+    }
+    return ret;
 }
