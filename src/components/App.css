@@ -36,6 +36,12 @@ body {
     padding: 1rem 0;
 }
 
+.header {
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .contents-page {
     display: flex;
     flex-direction: column;
@@ -51,14 +57,14 @@ body {
 }
 
 
-.contents-page > * {
+.contents-page > *, div.content-container {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
     border-radius: 25px;
 }
 
-.contents-page > div {
+.contents-page > div, .content-container {
     font-size: 1.75rem;
     text-align: justify; 
     background-color: rgba(68, 56, 139, 0.877);

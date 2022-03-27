@@ -1,40 +1,31 @@
 .Journey {
     background-image: url("../assets/media/images/BG5downtherabbithole.png");
 }
-/* #dtrhTitle {
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-} */
 .pairs {
-    width: 92%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     margin-right: auto;
     margin-left: auto;
     padding: 0;
+    gap: 2rem;
+    justify-content: space-around;
 }
-
-.contentBlurb {
-    background-color: rgba(68, 56, 139, 0.877);
-    margin-top: 0;
-    border: 4px outset #FFF !important;
-    width: 45%; /*this is breaking too much*/
-    padding: 20px;
-    border-radius: 100px;
-    /* height: 100%; */
-    overflow-y: scroll;
+.pairs > .contentBlurb {
+    flex-grow: 2;
+    /* max-width:60%; */
 }
-
-.mediaBlurb {
-    width: 50%;
+.pairs > .mediaBlurb {
+    /* max-width: 30%; */
 }
+/* .pairs > * {
+    max-width: 50%;
+} */
 
 .mediaBlurb > img {
-    width: 50%;
-    max-height: 50%;
-    border-radius: 50px;
-    border: 8px outset #FFF !important;
+    border-radius: 25px;
+    width: 100%;
+    /* border: 8px outset #FFF !important; */
 }
 
 .pairs:nth-child(even) > .contentBlurb {
@@ -45,21 +36,22 @@
 }
 
 @media (max-width: 1043px) {
-    .pairs:nth-child(even) > .contentBlurb {
-        order: 1;
-    }
-    .pairs:nth-child(odd) > .contentBlurb {
+    .pairs > .contentBlurb {
         order: 1;
     }
     .pairs {
-        width: 100%;
         flex-direction: column;
+        justify-content: center;
+        width: 95%;
     }
-    .mediaBlurb {
+    .mediaBlurb, .contentBlurb {
         width: 100%;
     }
-    .contentBlurb {
-        width: 95%;
+    .mediaBlurb > img {
+        /* max-height: 40vh;
+        width: auto; */
+        
+        text-align: center;
     }
     /* #dtrhTitle {
         background-color: rgba(68, 56, 139, 0.877);

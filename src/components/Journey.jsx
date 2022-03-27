@@ -6,7 +6,7 @@ import MediaContent from './MediaContent';
 function hide() {
     document.getElementById('staticRabbit').style.display = 'none';
     document.getElementById('downRabbit').style.display = 'block';
-    document.getElementById('downRabbit').style.marginBottom = `20px`;
+    // document.getElementById('downRabbit').style.marginBottom = `20px`;
 }
 function show() {
     document.getElementById('staticRabbit').style.display = 'block';
@@ -105,7 +105,7 @@ function Journey(props) {
     ]
     
     return (
-        <div className="Journey page">
+        <div className="Journey page contents-page">
             <span className="span" >
                 <h1 id="dtrhTitle">{props.t('Journey')}</h1>
             </span>
@@ -119,7 +119,7 @@ function Journey(props) {
                     );
                 })
             }
-            <button style={{marginBottom: `50px`, border: `0px solid black`, backgroundColor: `transparent`}} onClick={() => {
+            {/* <button style={{marginBottom: `50px`, border: `0px solid black`, backgroundColor: `transparent`}} onClick={() => {
                 props.showSidebar();
                 //bg transparent for bunny and disappears when clicked
                 document.getElementById('staticRabbit').style.display = 'none';
@@ -134,7 +134,7 @@ function Journey(props) {
                     <img id='hole'  width="200px" src={require("../assets/media/images/hole_f.png")} alt="hole"/>
                     <p style={{color: `#FFF`, fontSize: `10px`}} >{props.t('✨Click me for some hidden magic!✨')}</p>
                 </span>
-            </button>
+            </button> */}
         </div>
     );
 }

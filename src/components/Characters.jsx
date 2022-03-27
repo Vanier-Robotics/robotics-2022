@@ -3,21 +3,25 @@ import { withNamespaces } from 'react-i18next';
 import "./Characters.css"
 import CharacterCard from "./CharacterCard";
 
-// function CharacterCard(props) {
-//     return (
-//         <div className="flip-card">
-//             <div className="flip-card-inner">
-//                 <div className="flip-card-front">
-//                     <img src={props.front} alt={props.alt}/>                    
-//                 </div>
+function Team (props) {
 
-//                 <div className="flip-card-back">
-//                     <img src={props.back} alt={props.alt}/>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
+    return (
+        <div>
+            <h1>{props.header}</h1>
+            <div>
+                {
+                    props.members.map((i) => {
+                        return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
+                    })
+                }
+            </div>
+            <div className="content-container">
+            <span className="header">{props.pheader}</span>
+            <p className="contentBlurb advice">{props.p}</p>
+            </div>
+        </div>
+    )
+}
 
 function Characters(props) {
 
@@ -276,71 +280,78 @@ function Characters(props) {
             alt: 'Card',
         }
     ];
+    var mentor = [
+        {
+            front: require('../assets/media/images/members/fronts/mentor/f_Ashley.png'),
+            back: require('../assets/media/images/members/backs/b_Ashley.png'),
+            alt: 'Ashley',
+        }
+    ]
+    var teams = [
+        {
+            title: 'Captains',
+            header: props.t("Captains: "),
+            members: captains,
+            pheader: props.t('c2h'),
+            p: props.t('c2')
+        },
+        {
+            title: 'Build',
+            header: props.t("Build Team: "),
+            members: build,
+            pheader: props.t('c3h'),
+            p: props.t('c3')
+        },
+        {
+            title: 'Programming',
+            header: props.t("Programming Team: "),
+            members: programming,
+            pheader: props.t('c4h'),
+            p: props.t('c4')
+        },
+        {
+            title: 'Kiosk',
+            header: props.t("Kiosk Team: "),
+            members: kiosk,
+            pheader: props.t('c5h'),
+            p: props.t('c5')
+        },
+        {
+            title: 'Website',
+            header: props.t("Website Team: "),
+            members: website,
+            pheader: props.t('c6h'),
+            p: props.t('c6')
+        },
+        {
+            title: 'Journalism',
+            header: props.t("Journalism Team: "),
+            members: journalism,
+            pheader: props.t('c7h'),
+            p: props.t('c7')
+        },
+        {
+            title: 'Video',
+            header: props.t("Video Team: "),
+            members: video,
+            pheader: props.t('c8h'),
+            p: props.t('c8')
+        },
+        {
+            title: 'Mentor',
+            header: props.t("Mentor: "),
+            members: mentor,
+            pheader: props.t('c1h'),
+            p: props.t('c1')
+        }
+    ]
 
     return (
         <div className="Characters page" >
             {/* <h1 style={{margin: `0px`, height: `10%`}} >Our Characters</h1> */}
             <div className="cards">
-                <h1>{props.t("Captains: ")}</h1>
                 {
-                    captains.map((i) => {
-                        return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
-                    })
-                }
-                <p className="contentBlurb" style={{height: `100%`, width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c2h')}</u></em></b><br/><br/>{props.t('c2')}</p>
-                <br/><br/><br/>
-                <h1>{props.t("Build Team: ")}</h1>
-                {
-                    build.map((i) => {
-                        return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
-                    })
-                }
-                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c3h')}</u></em></b><br/><br/>{props.t('c3')}</p>
-                <br/><br/><br/>
-                <h1>{props.t("Programming Team: ")}</h1>
-                {
-                    programming.map((i) => {
-                        return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
-                    })
-                }
-                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c4h')}</u></em></b><br/><br/>{props.t('c4')}</p>
-                <br/><br/><br/>
-                <h1>{props.t("Kiosk Team: ")}</h1>
-                {
-                    kiosk.map((i) => {
-                        return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
-                    })
-                }
-                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c5h')}</u></em></b><br/><br/>{props.t('c5')}</p>
-                <br/><br/><br/>
-                <h1>{props.t("Website Team: ")}</h1>
-                {
-                    website.map((i) => {
-                        return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
-                    })
-                }
-                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c6h')}</u></em></b><br/><br/>{props.t('c6')}</p>
-                <br/><br/><br/>
-                <h1>{props.t("Journalism Team: ")}</h1>
-                {
-                    journalism.map((i) => {
-                        return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
-                    })
-                }
-                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c8h')}</u></em></b><br/><br/>{props.t('c8')}</p>
-                <br/><br/><br/>
-                <h1>{props.t("Video Team: ")}</h1>
-                {
-                    video.map((i) => {
-                        return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
-                    })
-                }
-                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c7h')}</u></em></b><br/><br/>{props.t('c7')}</p>
-                <br/><br/><br/>
-                <h1>{props.t("Mentor: ")}</h1>
-                <CharacterCard front={require('../assets/media/images/members/fronts/mentor/f_Ashley.png')} back={require('../assets/media/images/members/backs/b_Ashley.png')} alt={"Ashley"} />
-                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c1h')}</u></em></b><br/><br/>{props.t('c1')}</p>
-                <br/><br/><br/>
+                teams.map((t) => {return (<Team title={t.title} header={t.header} members={t.members} pheader={t.pheader} p={t.p}/>);})}
             </div>
         </div>
     );

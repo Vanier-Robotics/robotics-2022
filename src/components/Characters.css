@@ -3,21 +3,18 @@
 }
 
 .cards {
-    height: 100vh;
     text-align: center;
-    width: 95%;
+    width: 80%;
     /* max-width: 50%; */
-    max-width: 1200px;
     margin: 0 auto;
-    overflow-y: scroll;
-}
-::-webkit-scrollbar {
-    width: 0px; /* remove scrollbar space */
-    background: transparent; /* optional: just make scrollbar invisible */
 }
 
-.cards > h1 {
-    color: #fff;
+.contentBlurb {
+
+}
+
+.advice {
+    border-radius: 25px; /* */
 }
 
 .flip-card-front > img, 

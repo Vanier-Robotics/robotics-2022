@@ -4,7 +4,7 @@ import { withNamespaces } from "react-i18next";
 
 function Vaniercollege(props) {
 	return (
-		<div className="Vaniercollege page">
+		<div className="Vaniercollege page contents-page">
 
             <h1>{props.t('VC')}</h1>
 
@@ -20,12 +20,15 @@ function Vaniercollege(props) {
             <div>
                 <p>{props.t('v1')}</p>
             </div>
-            <img style={{borderRadius: `84px`, width: `70%`, marginTop: '0'}} alt="title here" src={require("../assets/media/images/Picture3.jpg")}/>
+            <div className="image">
+            <img alt="title here" src={require("../assets/media/images/Picture3.jpg")}/>
+            </div>
+            
             <div>
                 <p>{props.t('v2')}</p>
             </div>
-            <a rel="noreferrer" target="_blank" href="https://www.vaniercollege.qc.ca/">
-                <img style={{width: `70%`, marginTop: '0'}} alt="title here" src={require("../assets/media/images/vc.png")}/>
+            <a className="image" rel="noreferrer" target="_blank" href="https://www.vaniercollege.qc.ca/">
+                <img alt="title here" src={require("../assets/media/images/vc.png")}/>
             </a>
         </div>
   	);

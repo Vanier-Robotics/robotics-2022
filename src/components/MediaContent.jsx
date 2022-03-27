@@ -14,7 +14,10 @@ export default function MediaContent(props) {
     }
     return (
         <div className='pairs'>
-            <p className="contentBlurb" ><b><em><u>{props.header}</u></em></b><br/><br/>{props.content}</p>
+            <div className='contentBlurb'>
+                <span className='header'>{props.header}</span>
+                <p className="">{props.content}</p>
+            </div>
             <div className="mediaBlurb">
                 {mediajsx}
                 {media2jsx}
