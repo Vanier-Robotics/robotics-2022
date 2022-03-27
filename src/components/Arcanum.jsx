@@ -2,12 +2,55 @@ import React from "react";
 import { withNamespaces } from "react-i18next";
 import './Arcanum.css';
 
+
+
+
+function ListItem(props) {
+    // var output;
+    console.debug(props.list.length);
+    if (props.list.length > 0) {
+        return (<li>{props.text}<ul>{props.list.map ((r) => {return (<li>{r.text}</li>);})}</ul></li>)
+    } else {
+        return (
+            <li>
+                {props.text}
+            </li>
+        )
+    }
+}
+
 function Arcanum(props) {
+    var rules = [
+        {
+            text: props.t('a5'),
+            list: [{text: props.t('a6')}]
+        },
+        {
+            text: props.t('a7'),
+            list: [
+                {text: props.t('a71')},
+                {text: props.t('a72')},
+                {text: props.t('a73')},
+                {text: props.t('a74')},
+                {text: props.t('a75')},
+            ]},
+        {
+            text: props.t('a8'),
+            list: []
+        },
+        {
+            text: props.t('a9'),
+            list: []
+        }
+    ]
     return (
-        <div id="Arcanum" className="Arcanum page">
+        <div id="Arcanum" className="Arcanum page contents-page">
             <span className="banner" >
                 <h1 className="titleArcanum" >{props.t('Arcanum')}</h1>
             </span>
+            <div>
+                <p><b><em>{props.t('a1')}</em></b></p>
+            </div>
             <div>
                 <p>{props.t('a2')}</p>
             </div>
@@ -21,7 +64,7 @@ function Arcanum(props) {
                 <p>{props.t('a4')}</p>
             </div>
 
-            <div className="cadPane" >
+            <div className="cadPane embed">
                 <iframe 
                     className="playingField"
                     title="Arcanum Playing Field" 
@@ -34,6 +77,16 @@ function Arcanum(props) {
             </div>
             
             <div>
+                <ul>
+                    {
+                        rules.map ((r) => {
+                            return (<ListItem text={r.text} list={r.list}></ListItem>);
+                        })
+                    }
+                </ul>
+            </div>
+
+            {/* <div>
                 <p>{props.t('a5')}</p>
             </div>
             <div>
@@ -43,15 +96,13 @@ function Arcanum(props) {
                 <p>{props.t('a7')}</p>
             </div>
             
-            <div>
-                <p><b><em>{props.t('a1')}</em></b></p>
-            </div>
+           
             <div>
                 <p>{props.t('a8')}</p>
             </div>
             <div>
                 <p>{props.t('a9')}</p>
-            </div>
+            </div> */}
             <div>
                 <p>{props.t('a10')}</p>
             </div>

@@ -5,7 +5,9 @@
 .VCSAWrapper, .VCWrapper, .CRCWrapper {
     /* float: left; */
     height: 20%;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
+    /* width: 80%; */
+    text-align: center;
 }
 .Jackpot > div > p {
     background-color: rgba(90, 28, 148, 0.925);
