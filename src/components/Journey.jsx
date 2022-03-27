@@ -17,6 +17,7 @@ function Journey(props) {
     //D9 media 1 is MOV 5792 on drive
     //D8 media 2 is MOV drive/tutorial/00001.mts
     //D12 media 2 is MOV ducttape
+    var placeholderVideo = 'https://www.youtube.com/embed/9POCgSRVvf0';
     var pairs = [
         {
             header: props.t('d1h'),
@@ -71,7 +72,7 @@ function Journey(props) {
             content: props.t('d9'),
             media: "0",
             media2: "0",
-            vid: "https://www.youtube.com/embed/9pocgsrvvf0",
+            vid: placeholderVideo,
             alt: "Media here",
         },
         {
@@ -79,7 +80,7 @@ function Journey(props) {
             content: props.t('d8'),
             media: require("../assets/media/images/IMG_5556.jpg"),
             media2: "0",
-            vid: "https://www.youtube.com/embed/9pocgsrvvf0",
+            vid: placeholderVideo,
             alt: "Media here",
         },
         {
@@ -103,7 +104,7 @@ function Journey(props) {
             content: props.t('d12'),
             media: require("../assets/media/images/IMG_3182.jpg"),
             media2: "0",
-            vid: "https://www.youtube.com/embed/9pocgsrvvf0",
+            vid: placeholderVideo,
             alt: "Media here",
         },
         {
