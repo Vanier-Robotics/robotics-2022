@@ -11,12 +11,16 @@ function Arcanum(props) {
             <div>
                 <p>{props.t('a2')}</p>
             </div>
+            <a className="CRCWrapper" rel="noreferrer" target="_blank" href="https://robo-crc.ca/">
+                <img className="crc" alt="title here" src={require("../assets/media/images/crc.png")}/>
+            </a>
             <div>
                 <p>{props.t('a3')}</p>
             </div>
             <div>
                 <p>{props.t('a4')}</p>
             </div>
+
             <div className="cadPane" >
                 <iframe 
                     className="playingField"
@@ -28,17 +32,17 @@ function Arcanum(props) {
                     frameBorder="0">
                 </iframe>
             </div>
-            <div className="contentPane" >
-                <div>
-                    <p>{props.t('a5')}</p>
-                </div>
-                <div>
-                    <p>{props.t('a6')}</p>
-                </div>
-                <div>
-                    <p>{props.t('a7')}</p>
-                </div>
+            
+            <div>
+                <p>{props.t('a5')}</p>
             </div>
+            <div>
+                <p>{props.t('a6')}</p>
+            </div>
+            <div>
+                <p>{props.t('a7')}</p>
+            </div>
+            
             <div>
                 <p><b><em>{props.t('a1')}</em></b></p>
             </div>
