@@ -97,7 +97,7 @@ function Journey(props) {
     
     return (
         <>
-            <div className="Journey">
+            <div className="Journey page">
                 <span className="span" >
                     <h1>{props.t('Journey')}</h1>
                 </span>

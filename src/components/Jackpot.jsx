@@ -5,7 +5,7 @@ import './Jackpot.css';
 function Jackpot(props) {
     
     return (
-        <div className="Jackpot">
+        <div className="Jackpot page">
             <span className="span" >
                 <h1 className="titleArcanum" >{props.t('Jackpot')}</h1>
             </span>

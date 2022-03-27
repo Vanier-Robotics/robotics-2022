@@ -1,15 +1,8 @@
 .Vaniercollege {
-    background: url("../assets/media/images/vanierland.png") no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow-y: auto;
-    height: 100vh;
-    width: 100vw;
-    color: #FFF;
+    background-image: url("../assets/media/images/vanierland.png");
 }
 
 .Vaniercollege > h1 {
-
     margin: 20px;
     padding: 0;
 }
