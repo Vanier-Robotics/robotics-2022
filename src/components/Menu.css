@@ -1,63 +1,72 @@
 .Menu {
-  background-image: url("../assets/media/images/BG_3.png");
-  background-size: cover;
-  background-attachment: fixed;
-  /* background-size: contain; */
+    background-image: url("../assets/media/images/BG_3.png");
 }
 
 .buttons-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: scroll;
-  /* overflow-x: hidden; */
-  max-height: 90vh;
-  padding-top: 2rem;
-  padding-bottom: 4.5rem;
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-  scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem;
 }
 
 .menuitem {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  cursor: pointer;
-  text-decoration: none;
-  flex-grow: 2;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: pointer;
+    text-decoration: none;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .menuimage {
-  transition: transform 0.25s;
-  transition-timing-function: ease-in-out;
-  order: 1;
+    transition: transform 250ms, filter 200ms;
+    transition-timing-function: ease-in-out;
+    order: 1;
+    filter: contrast(0) hue-rotate(0) brightness(1000%);
 }
 
 .label {
-  font-family: 'Alice', serif;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 4rem;
-  text-decoration: none;
+    font-family: "Alice", serif;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 4rem;
+    text-decoration: none;
 }
 
 .menuitem:nth-child(even) > .label {
-  order: 2;
+    order: 2;
 }
 .menuitem:nth-child(odd) > .label {
-  order: -1;
+    order: -1;
 }
 
 .menuitem:nth-child(odd):hover > .menuimage {
     transform: scale(1.35) rotate(-45deg);
+    filter: none;
 }
 
 .menuitem:nth-child(even):hover > .menuimage {
     transform: scale(1.35) rotate(45deg);
+    filter: none;
+}
+
+@media screen and (max-width: 800px) {
+    /* .menuitem:nth-child(even) > .label {
+        order: -1;
+    } */
+    .menuimage {
+        order: 3;
+        /* display: none; */
+    }
+    .menuitem:hover > .menuimage {
+        transform: scale(1) !important;
+        filter: none;
+    }
 }

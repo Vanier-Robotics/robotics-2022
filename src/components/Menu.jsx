@@ -3,17 +3,6 @@ import { withNamespaces } from "react-i18next";
 import { Link } from 'react-router-dom';
 import './Menu.css'
 
-
-// function hide() {
-//     document.getElementById('staticRabbit').style.display = 'none';
-//     document.getElementById('downRabbit').style.display = 'block';
-// }
-
-// function show() {
-//     document.getElementById('staticRabbit').style.display = 'block';
-//     document.getElementById('downRabbit').style.display = 'none';
-// }
-
 function MenuItem(props) {
     return (
         <Link to={props.to} className="menuitem">
@@ -70,7 +59,7 @@ function Menu({ t }) {
         }
     ];
     return (
-        <div className="Menu">
+        <div className="Menu page">
             <div className="buttons-container">
                 {
                     menu.map((m) => {
