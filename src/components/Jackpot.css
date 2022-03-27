@@ -8,12 +8,13 @@
     margin-bottom: 70px;
 }
 .Jackpot > div > p {
-    background-color: rgba(68, 56, 139, 0.877);
+    background-color: rgba(90, 28, 148, 0.925);
     padding: 40px 0px 40px;
     border-radius: 100px;
     width: 60%;
     margin-right: auto;
     margin-left: auto;
+    color: white;
 }
 .Jackpot {
     width: 100vw;
@@ -24,8 +25,6 @@
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    float: right;
 }
 
 @media (max-width: 685px) {

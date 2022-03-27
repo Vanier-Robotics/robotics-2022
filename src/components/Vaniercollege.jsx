@@ -20,6 +20,7 @@ function Vaniercollege(props) {
             <div>
                 <p>{props.t('v1')}</p>
             </div>
+            <img style={{borderRadius: `84px`, width: `70%`, marginTop: '0'}} alt="title here" src={require("../assets/media/images/Picture3.jpg")}/>
             <div>
                 <p>{props.t('v2')}</p>
             </div>

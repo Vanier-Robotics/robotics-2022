@@ -286,7 +286,7 @@ function Characters(props) {
                         return <CharacterCard front={i.front} back={i.back} alt={i.alt} />
                     })
                 }
-                <p className="contentBlurb" style={{width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c2h')}</u></em></b><br/><br/>{props.t('c2')}</p>
+                <p className="contentBlurb" style={{height: `100%`, width: `80%`,marginRight: `auto`, marginLeft: `auto`}}><b><em><u>{props.t('c2h')}</u></em></b><br/><br/>{props.t('c2')}</p>
                 <br/><br/><br/>
                 <h1>{props.t("Build Team: ")}</h1>
                 {

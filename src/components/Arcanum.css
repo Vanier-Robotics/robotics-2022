@@ -7,8 +7,12 @@
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
+    color: #fff;
 }
 .Arcanum > div > p, .Arcanum > div > div > p {
+    background-color: rgba(68, 56, 139, 0.877);
+    border-radius: 25px;
+    padding: 20px;
     width: 60%;
     margin-right: auto;
     margin-left: auto;

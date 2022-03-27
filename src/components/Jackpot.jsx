@@ -18,18 +18,22 @@ function Jackpot(props) {
             <div>
                 <p>{props.t('j4')}</p>
             </div>
+
+            <img style={{width: `65%`, margin: `0px auto 0px`}} alt="title here" src={require("../assets/media/images/vcsa_support.png")}/>
             
             <div>
                 <p>{props.t('j5')}</p>
             </div>
 
+            <div>
+                <a className="VCWrapper" rel="noreferrer" target="_blank" href="https://www.vaniercollege.qc.ca/">
+                    <img className="vc" alt="title here" src={require("../assets/media/images/vc.png")}/>
+                </a>
+                <a className="CRCWrapper" rel="noreferrer" target="_blank" href="https://robo-crc.ca/">
+                    <img className="crc" alt="title here" src={require("../assets/media/images/crc.png")}/>
+                </a>
+            </div>
             
-            <a className="VCWrapper" rel="noreferrer" target="_blank" href="https://www.vaniercollege.qc.ca/">
-                <img className="vc" alt="title here" src={require("../assets/media/images/vc.png")}/>
-            </a>
-            <a className="CRCWrapper" rel="noreferrer" target="_blank" href="https://robo-crc.ca/">
-                <img className="crc" alt="title here" src={require("../assets/media/images/crc.png")}/>
-            </a>
             <br/><br/><br/>
         </div>
     );

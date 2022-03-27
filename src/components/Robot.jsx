@@ -12,17 +12,18 @@ function Robot(props) {
                 <p>{props.t('r1')}</p>
             </div>
             <div>
-                <img id='staticRabbit' width="100px" src={require("../assets/media/images/teapot_f.png")} alt="UpRabbit"/>
-                <img id='staticRabbit' width="100px" src={require("../assets/media/images/teapot_f.png")} alt="UpRabbit"/>
+                <img id='staticRabbit' width="60%" src={require("../assets/media/images/robot.jpg")} alt="UpRabbit"/>
+                {/* <img id='staticRabbit' width="60%" src={require("../assets/media/images/teapot_f.png")} alt="UpRabbit"/> */}
+                {/* Video 5883.mov */}
             </div>
             <div>
                 <p>{props.t('r2')} <br/><br/> {props.t('drivetrain')} <br/> {props.t('input')} <br/> {props.t('reservoir')} <br/> {props.t('output')}</p>
             </div>
             <div>
-                <p>{props.t('r3')} <br/><br/> {props.t('r4')} <br/><br/> {props.t('r5')} <br/><br/> {props.t('r6')}</p>
+                <p>{props.t('r3')}</p>
             </div>
             <div>
-                <p>{props.t('r7')}</p>
+                <p>{props.t('r4')}</p>
             </div>
             <div>
                 <iframe 
@@ -34,12 +35,12 @@ function Robot(props) {
                     mozallowfullscreen="true" 
                     frameBorder="0">
                 </iframe>
-            </div>                
+            </div> 
             <div>
-                <p>{props.t('r8')}</p>
+                <p>{props.t('r5')}</p>
             </div>
             <div>
-                <p>{props.t('r9')}</p>
+                <p>{props.t('r6')}</p>
             </div>
             <div>
                 <iframe 
@@ -52,12 +53,42 @@ function Robot(props) {
                     frameBorder="0">
                 </iframe>
             </div>
-            <br/><br/><br/>
             <div>
-                <img id='staticRabbit' width="100px" src={require("../assets/media/images/teapot_f.png")} alt="UpRabbit"/>
-                <img id='staticRabbit' width="100px" src={require("../assets/media/images/teapot_f.png")} alt="UpRabbit"/>
-                <img id='staticRabbit' width="100px" src={require("../assets/media/images/teapot_f.png")} alt="UpRabbit"/>
+                {/* Video robot on ground */}
             </div>
+
+            <div>
+                <p>{props.t('r7')}</p>
+            </div>
+                           
+            <div>
+                <p>{props.t('r8')}</p>
+            </div>
+            <div>
+                <img id='staticRabbit' width="60%" src={require("../assets/media/images/prototype1.jpg")} alt="UpRabbit"/>
+            </div>
+
+            <div>
+                <p>{props.t('r9')}</p>
+            </div>
+            {/* Video prototype2 */}
+            
+            <div>
+                <p>{props.t('r10')}</p>
+            </div>
+            <div>
+                <img id='staticRabbit' width="60%" src={require("../assets/media/images/3dprintersetup.jpg")} alt="UpRabbit"/>
+            </div>
+            {/* Video 5553 */}
+
+            <div>
+                <p>{props.t('r11')}</p>
+            </div>
+            <div>
+                <img id='staticRabbit' width="60%" src={require("../assets/media/images/IMG_5843.jpg")} alt="UpRabbit"/>
+            </div>
+
+
         </div>
     );
 }
