@@ -15,14 +15,14 @@
     flex-grow: 2;
     /* max-width:60%; */
 }
-.pairs > .mediaBlurb {
-    /* max-width: 30%; */
-}
+/* .pairs > .mediaBlurb {
+    max-width: 30%;
+} */
 /* .pairs > * {
     max-width: 50%;
 } */
 
-.mediaBlurb > img {
+.mediaBlurb > img, .mediaBlurb > iframe {
     border-radius: 25px;
     width: 100%;
     /* border: 8px outset #FFF !important; */

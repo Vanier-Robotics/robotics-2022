@@ -72,7 +72,7 @@ function Journey(props) {
             content: props.t('d9'),
             media: "0",
             media2: "0",
-            vid: placeholderVideo,
+            vid: "https://www.youtube.com/embed/BWTq8sfRFl8",
             alt: "Media here",
         },
         {
@@ -80,7 +80,7 @@ function Journey(props) {
             content: props.t('d8'),
             media: require("../assets/media/images/IMG_5556.jpg"),
             media2: "0",
-            vid: placeholderVideo,
+            vid: "https://www.youtube.com/embed/YSZ8taJoG1E",
             alt: "Media here",
         },
         {
@@ -104,7 +104,7 @@ function Journey(props) {
             content: props.t('d12'),
             media: require("../assets/media/images/IMG_3182.jpg"),
             media2: "0",
-            vid: placeholderVideo,
+            vid: "https://www.youtube.com/embed/OZ7PcrgX0J0",
             alt: "Media here",
         },
         {
