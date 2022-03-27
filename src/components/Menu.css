@@ -1,5 +1,5 @@
 .Menu {
-  background: url("../assets/media/images/BG_3.png") no-repeat;
+  background-image: url("../assets/media/images/BG_3.png");
   background-size: cover;
   background-attachment: fixed;
   /* background-size: contain; */

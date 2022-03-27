@@ -1,6 +1,5 @@
 .Characters {
-    background: url("../assets/media/images/BG4characters.png") no-repeat;
-    background-size: cover;
+    background-image: url("../assets/media/images/BG4characters.png");
 }
 
 .cards {

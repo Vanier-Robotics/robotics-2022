@@ -5,12 +5,16 @@ import { withNamespaces } from "react-i18next";
 import i18n from '../i18n';
 
 function hide() {
-    document.getElementById('Dark').style.display = 'none';
-    document.getElementById('Light').style.display = 'block';
+    document.getElementById('Dark').classList.add('hide');
+    document.getElementById('Light').classList.add('show');
+    document.getElementById('Dark').classList.remove('show');
+    document.getElementById('Light').classList.remove('hide');
 }
 function show() {
-    document.getElementById('Dark').style.display = 'block';
-    document.getElementById('Light').style.display = 'none';
+    document.getElementById('Dark').classList.add('show');
+    document.getElementById('Light').classList.add('hide');
+    document.getElementById('Dark').classList.remove('hide');
+    document.getElementById('Light').classList.remove('show');
 }
 
 function Home(props) {
@@ -27,8 +31,8 @@ function Home(props) {
     
     return (
         <>
-            <img id="Dark" className="BGDark" alt="Dark BG here" src={require("../assets/media/images/landing.png")}/>
-            <img id="Light" className="BGLight" alt="Light BG here" src={require("../assets/media/images/pinklanding.png")}/>
+            <img id="Dark" className="BG show" alt="Dark BG here" src={require("../assets/media/images/landing.png")}/>
+            <img id="Light" className="BG hide" alt="Light BG here" src={require("../assets/media/images/pinklanding.png")}/>
             <div className="container" >
                 <div className="row1" >
                     <Link onMouseOver={hide} onMouseOut={show} onClick={toEn} to="/menu">

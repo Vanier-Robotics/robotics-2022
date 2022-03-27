@@ -1,6 +1,5 @@
 .Journey {
-    background: url("../assets/media/images/BG5downtherabbithole.png") no-repeat;
-    color: #FFF;
+    background-image: url("../assets/media/images/BG5downtherabbithole.png");
 }
 .pairs {
     width: 100%;

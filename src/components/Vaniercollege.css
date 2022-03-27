@@ -1,7 +1,5 @@
 .Vaniercollege {
-    background: url("../assets/media/images/vanierland.png") no-repeat;
-    background-size: cover;
-    color: #FFF;
+    background-image: url("../assets/media/images/vanierland.png");
 }
 
 .Vaniercollege > h1 {
