@@ -5,32 +5,33 @@ import './Jackpot.css';
 function Jackpot(props) {
     
     return (
-        <div className="Jackpot page">
+        <div className="Jackpot page contents-page">
             <span className="span" >
-                <h1 className="titleArcanum" >{props.t('Jackpot')}</h1>
+                <h1 className="titleArcanum">{props.t('Jackpot')}</h1>
             </span>
             <div>
-                <p>{props.t('j1')}<br/><br/>{props.t('j2')}<br/><br/>{props.t('j3')}</p>
+                <p>{props.t('j1')}</p><p>{props.t('j2')}</p><p>{props.t('j3')}</p>
             </div>
-            <a className="VCSAWrapper" rel="noreferrer" target="_blank" href="https://www.vcsavanier.com/">
-                <img className="vcsa" alt="title here" src={require("../assets/media/images/VCSA.png")}/>
+            <a className="image" rel="noreferrer" target="_blank" href="https://www.vcsavanier.com/">
+                <img className="" alt="title here" src={require("../assets/media/images/VCSA.png")}/>
             </a>
             <div>
                 <p>{props.t('j4')}</p>
             </div>
-
-            <img style={{width: `65%`, margin: `0px auto 0px`}} alt="title here" src={require("../assets/media/images/vcsa_support.png")}/>
+            <div className="image">
+                <img alt="title here" src={require("../assets/media/images/vcsa_support.png")}/>
+            </div>
             
             <div>
                 <p>{props.t('j5')}</p>
             </div>
 
-            <div>
-                <a className="VCWrapper" rel="noreferrer" target="_blank" href="https://www.vaniercollege.qc.ca/">
+            <div className="image background">
+                <a className="wapper" rel="noreferrer" target="_blank" href="https://www.vaniercollege.qc.ca/">
                     <img className="vc" alt="title here" src={require("../assets/media/images/vc.png")}/>
                 </a>
-                <a className="CRCWrapper" rel="noreferrer" target="_blank" href="https://robo-crc.ca/">
-                    <img className="crc" alt="title here" src={require("../assets/media/images/crc.png")}/>
+                <a className="wapper" rel="noreferrer" target="_blank" href="https://robo-crc.ca/">
+                    <img className="" alt="title here" src={require("../assets/media/images/crc.png")}/>
                 </a>
             </div>
             

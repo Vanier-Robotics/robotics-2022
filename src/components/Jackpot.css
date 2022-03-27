@@ -1,39 +1,25 @@
-.vcsa, .vc, .crc {
-    height: 100%;
-}
-
-.VCSAWrapper, .VCWrapper, .CRCWrapper {
-    /* float: left; */
-    height: 20%;
-    /* margin-bottom: 70px; */
-    /* width: 80%; */
-    text-align: center;
-}
-.Jackpot > div > p {
-    background-color: rgba(90, 28, 148, 0.925);
-    padding: 40px 0px 40px;
-    border-radius: 100px;
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
-    color: white;
-}
 .Jackpot {
     background-image: url('../assets/media/images/alice_13_r.png');
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
 }
 
+/* .wrapper {
+    height: 20%;
+    text-align: center;
+}
+
+.wrapper img {
+    height: 100%;
+} */
+
 @media (max-width: 685px) {
-    .VCSAWrapper, .VCWrapper, .CRCWrapper {
+    .wrapper {
         /* width: 100%; */
         height: 140px;
     }
 }
 
-@media (max-height: 760px) {
+/* @media (max-height: 760px) {
     .Jackpot {
         overflow-y: auto;
     }
-}
+} */

@@ -17,7 +17,13 @@ function Robot(props) {
                 {/* Video 5883.mov */}
             </div>
             <div className="wider">
-                <p>{props.t('r2')}</p>{props.t('drivetrain')} <br/> {props.t('input')}<br/>{props.t('reservoir')}<br/>{props.t('output')}
+                <p>{props.t('r2')}</p>
+                <ul className="list-spades">
+                    <li>{props.t('drivetrain')}</li>
+                    <li>{props.t('input')}</li>
+                    <li>{props.t('reservoir')}</li>
+                    <li>{props.t('output')}</li>
+                </ul>
             </div>
             <div>
                 <p>{props.t('r3')}</p>
@@ -64,7 +70,7 @@ function Robot(props) {
             <div>
                 <p>{props.t('r8')}</p>
             </div>
-            <div>
+            <div className="image">
                 <img id='staticRabbit' width="60%" src={require("../assets/media/images/prototype1.jpg")} alt="UpRabbit"/>
             </div>
 
@@ -76,7 +82,7 @@ function Robot(props) {
             <div>
                 <p>{props.t('r10')}</p>
             </div>
-            <div>
+            <div className="image">
                 <img id='staticRabbit' width="60%" src={require("../assets/media/images/3dprintersetup.jpg")} alt="UpRabbit"/>
             </div>
             {/* Video 5553 */}
@@ -84,7 +90,7 @@ function Robot(props) {
             <div>
                 <p>{props.t('r11')}</p>
             </div>
-            <div>
+            <div className="image">
                 <img id='staticRabbit' width="60%" src={require("../assets/media/images/IMG_5843.jpg")} alt="UpRabbit"/>
             </div>
 

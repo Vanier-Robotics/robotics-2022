@@ -9,7 +9,7 @@ function ListItem(props) {
     // var output;
     console.debug(props.list.length);
     if (props.list.length > 0) {
-        return (<li>{props.text}<ul>{props.list.map ((r) => {return (<li>{r.text}</li>);})}</ul></li>)
+        return (<li>{props.text}<ul className="list-clubs">{props.list.map ((r) => {return (<li>{r.text}</li>);})}</ul></li>)
     } else {
         return (
             <li>
@@ -77,7 +77,7 @@ function Arcanum(props) {
             </div>
             
             <div>
-                <ul>
+                <ul className="list-hearts">
                     {
                         rules.map ((r) => {
                             return (<ListItem text={r.text} list={r.list}></ListItem>);

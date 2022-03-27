@@ -38,7 +38,7 @@
 
 h1 {
     font-family: 'Alice', serif;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    /* -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: rgb(0, 0, 0); */
     color: #FFF;
 }
