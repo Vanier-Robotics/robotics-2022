@@ -17,14 +17,10 @@
     color: white;
 }
 .Jackpot {
-    width: 100vw;
-    height: 100vh;
-    background: url('../assets/media/images/alice_13_r.png') no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow-y: auto;
+    background-image: url('../assets/media/images/alice_13_r.png');
     display: flex;
     flex-direction: column;
+    justify-content: right;
 }
 
 @media (max-width: 685px) {

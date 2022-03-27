@@ -20,3 +20,13 @@ body {
     font-family: 'Alice', serif;
     padding: 2rem;
 }
+
+.page {
+    /* height: 100vh;
+    width: 100vw; */
+    overflow-y: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+}

@@ -1,23 +1,23 @@
 import React from "react";
 import { withNamespaces } from "react-i18next";
-import './Robot.css'
+import "./Robot.css";
 
 function Robot(props) {
     return (
-        <div className="Robot">
-            <span className="span" >
-                <h1 className="titleArcanum" >{props.t('Robot')}</h1>
+        <div id="Robot" className="Robot page contents-page">
+            <span className="banner" >
+                <h1 className="titleArcanum">{props.t('Robot')}</h1>
             </span>
             <div>
                 <p>{props.t('r1')}</p>
             </div>
-            <div>
+            <div className="image">
                 <img id='staticRabbit' width="60%" src={require("../assets/media/images/robot.jpg")} alt="UpRabbit"/>
                 {/* <img id='staticRabbit' width="60%" src={require("../assets/media/images/teapot_f.png")} alt="UpRabbit"/> */}
                 {/* Video 5883.mov */}
             </div>
-            <div>
-                <p>{props.t('r2')} <br/><br/> {props.t('drivetrain')} <br/> {props.t('input')} <br/> {props.t('reservoir')} <br/> {props.t('output')}</p>
+            <div className="wider">
+                <p>{props.t('r2')}</p>{props.t('drivetrain')} <br/> {props.t('input')}<br/>{props.t('reservoir')}<br/>{props.t('output')}
             </div>
             <div>
                 <p>{props.t('r3')}</p>
@@ -25,7 +25,7 @@ function Robot(props) {
             <div>
                 <p>{props.t('r4')}</p>
             </div>
-            <div>
+            <div className="embed">
                 <iframe 
                     className="robot1"
                     title="Arcanum Playing Field" 
@@ -42,7 +42,7 @@ function Robot(props) {
             <div>
                 <p>{props.t('r6')}</p>
             </div>
-            <div>
+            <div className="embed">
                 <iframe 
                     className="robot2"
                     title="Arcanum Playing Field" 
