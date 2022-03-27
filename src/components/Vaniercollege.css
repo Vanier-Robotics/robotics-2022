@@ -8,7 +8,7 @@
     margin: 20px;
     padding: 0;
 }
-.pairs {
+/* .pairs {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +27,17 @@
 
 .mediaBlurb {
     width: 50%;
+} */
+
+.Vaniercollege > div > p {
+    background-color: rgba(68, 56, 139, 0.877);
+    padding: 40px 0px 40px;
+    border-radius: 100px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 
 .mediaBlurb > img {
     width: 75%;
@@ -61,5 +71,5 @@
 iframe {
     border-radius: 25px;
     height: 60vh;
-    width: 90%;
+    width: 75%;
 }

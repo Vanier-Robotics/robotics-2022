@@ -31,19 +31,17 @@ function Home(props) {
             <img id="Light" className="BGLight" alt="Light BG here" src={require("../assets/media/images/pinklanding.png")}/>
             <div className="container" >
                 <div className="row1" >
-                    <Link onMouseOver={hide} onMouseOut={show} onClick={toEn} to="/transition-1">
+                    <Link onMouseOver={hide} onMouseOut={show} onClick={toEn} to="/menu">
                         <img className="cake" alt="English" src={require("../assets/media/images/en.png")} />
                         <img className="cake" alt="Cake here" src={require("../assets/media/images/cookie.png")} />
                         
                     </Link>
                 </div>
                 <div className="row2" >
-                    <a href="https://www.alice-in-wonderland.net/" target="_blank" rel="noreferrer" >
-                        <img className="title" alt="title here" src={require("../assets/media/images/title1.png")}/>
-                    </a>
+                    <img className="title" alt="title here" src={require("../assets/media/images/title1.png")}/>
                 </div>
                 <div className="row3" >
-                    <Link onMouseOver={hide} onMouseOut={show} onClick={toFr} to="/transition-1">
+                    <Link onMouseOver={hide} onMouseOut={show} onClick={toFr} to="/menu">
                         <img className="vial" alt="Vial here" src={require("../assets/media/images/bottle.png")}/>
                         <img className="vial" alt="French" src={require("../assets/media/images/fr.png")} />
                     </Link>

@@ -8,6 +8,15 @@ function Arcanum(props) {
             <span className="banner" >
                 <h1 className="titleArcanum" >{props.t('Arcanum')}</h1>
             </span>
+            <div>
+                <p>{props.t('a2')}</p>
+            </div>
+            <div>
+                <p>{props.t('a3')}</p>
+            </div>
+            <div>
+                <p>{props.t('a4')}</p>
+            </div>
             <div className="cadPane" >
                 <iframe 
                     className="playingField"
@@ -19,13 +28,29 @@ function Arcanum(props) {
                     frameBorder="0">
                 </iframe>
             </div>
-
             <div className="contentPane" >
-                {/* <h1>{props.t('Arcanum')}</h1> */}
-                
-                <p>{props.t('placeholder')}</p>
+                <div>
+                    <p>{props.t('a5')}</p>
+                </div>
+                <div>
+                    <p>{props.t('a6')}</p>
+                </div>
+                <div>
+                    <p>{props.t('a7')}</p>
+                </div>
             </div>
-            
+            <div>
+                <p><b><em>{props.t('a1')}</em></b></p>
+            </div>
+            <div>
+                <p>{props.t('a8')}</p>
+            </div>
+            <div>
+                <p>{props.t('a9')}</p>
+            </div>
+            <div>
+                <p>{props.t('a10')}</p>
+            </div>
         </div>
     );
 }

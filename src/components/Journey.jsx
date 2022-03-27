@@ -6,6 +6,7 @@ import MediaContent from './MediaContent';
 function hide() {
     document.getElementById('staticRabbit').style.display = 'none';
     document.getElementById('downRabbit').style.display = 'block';
+    document.getElementById('downRabbit').style.marginBottom = `20px`;
 }
 function show() {
     document.getElementById('staticRabbit').style.display = 'block';
@@ -15,17 +16,80 @@ function show() {
 function Journey(props) {
     var pairs = [
         {
-            content: props.t('placeholder-medium'),
+            header: props.t('d1h'),
+            content: props.t('d1'),
             media: require("../assets/media/images/teapot_f.png"),
             alt: "Media here",
         },
         {
-            content: props.t('placeholder-small'),
+            header: props.t('d2h'),
+            content: props.t('d2'),
             media: require("../assets/media/images/teapot_f.png"),
             alt: "Media here",
         },
         {
-            content: props.t('placeholder-small'),
+            header: props.t('d3h'),
+            content: props.t('d3'),
+            media: require("../assets/media/images/teapot_f.png"),
+            alt: "Media here",
+        },
+        {
+            header: props.t('d4h'),
+            content: props.t('d4'),
+            media: require("../assets/media/images/teapot_f.png"),
+            alt: "Media here",
+        },
+        {
+            header: props.t('d5h'),
+            content: props.t('d5'),
+            media: require("../assets/media/images/teapot_f.png"),
+            alt: "Media here",
+        },
+        {
+            header: props.t('d6h'),
+            content: props.t('d6'),
+            media: require("../assets/media/images/teapot_f.png"),
+            alt: "Media here",
+        },
+        {
+            header: props.t('d7h'),
+            content: props.t('d7'),
+            media: require("../assets/media/images/teapot_f.png"),
+            alt: "Media here",
+        },
+        {
+            header: props.t('d8h'),
+            content: props.t('d8'),
+            media: require("../assets/media/images/teapot_f.png"),
+            alt: "Media here",
+        },
+        {
+            header: props.t('d9h'),
+            content: props.t('d9'),
+            media: require("../assets/media/images/teapot_f.png"),
+            alt: "Media here",
+        },
+        {
+            header: props.t('d10h'),
+            content: props.t('d10'),
+            media: require("../assets/media/images/teapot_f.png"),
+            alt: "Media here",
+        },
+        {
+            header: props.t('d11h'),
+            content: props.t('d11'),
+            media: require("../assets/media/images/teapot_f.png"),
+            alt: "Media here",
+        },
+        {
+            header: props.t('d12h'),
+            content: props.t('d12'),
+            media: require("../assets/media/images/teapot_f.png"),
+            alt: "Media here",
+        },
+        {
+            header: props.t('d13h'),
+            content: props.t('d13'),
             media: require("../assets/media/images/teapot_f.png"),
             alt: "Media here",
         },
@@ -39,14 +103,17 @@ function Journey(props) {
                 </span>
                 {
                     pairs.map((i) => {
-                        return <MediaContent media={i.media} alt={i.alt} content={i.content} />
+                        return <MediaContent header={i.header} media={i.media} alt={i.alt} content={i.content} />
                     })
                 }
                 <button style={{marginBottom: `50px`}} onClick={() => {
                     props.showSidebar();
+                    //bg transparent for bunny and disappears when clicked
+                    document.getElementById('staticRabbit').style.display = 'none';
+                    document.getElementById('downRabbit').style.display = 'none';
                     setTimeout(() => {
                         document.getElementById('gallery').style.display = 'block';
-                    } , 2500);
+                    } , 1500);
                 }} >
                     <span onMouseOver={hide} onMouseOut={show} style={{width: `100%`, display: `flex`, flexDirection: `column`, margin: `0`}}>
                         <img id='staticRabbit' width="100px" src={require("../assets/media/images/rabbit.png")} alt="UpRabbit"/>

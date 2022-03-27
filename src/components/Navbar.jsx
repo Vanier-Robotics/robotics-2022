@@ -95,7 +95,7 @@ function Navbar(props) {
                             <div>{props.t('Jackpot')}</div>
                         </Link>
                     </li>
-                    <li className="nav-text" id='gallery' style={{display: `none`, borderStyle: `dashed`}}>
+                    <li className="nav-text" id='gallery' style={{display: `none`}}>
                         <Link to='/gallery'>
                             <GrIcons.GrGallery style={{filter: `invert(1)`}} size={40} />
                             <div>{props.t('Gallery')}</div>

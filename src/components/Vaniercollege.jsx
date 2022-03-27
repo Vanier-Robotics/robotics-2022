@@ -17,7 +17,15 @@ function Vaniercollege(props) {
                 loading="lazy">
             </iframe>
             
-            <p>{props.t('placeholder')}</p>
+            <div>
+                <p>{props.t('v1')}</p>
+            </div>
+            <div>
+                <p>{props.t('v2')}</p>
+            </div>
+            <a rel="noreferrer" target="_blank" href="https://www.vaniercollege.qc.ca/">
+                <img style={{width: `70%`, marginTop: '0'}} alt="title here" src={require("../assets/media/images/vc.png")}/>
+            </a>
         </div>
   	);
 }
