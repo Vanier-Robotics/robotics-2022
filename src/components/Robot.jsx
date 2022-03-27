@@ -13,9 +13,16 @@ function Robot(props) {
             </div>
             <div className="image">
                 <img id='staticRabbit' width="60%" src={require("../assets/media/images/robot.jpg")} alt="UpRabbit"/>
-                {/* <img id='staticRabbit' width="60%" src={require("../assets/media/images/teapot_f.png")} alt="UpRabbit"/> */}
-                {/* Video 5883.mov */}
             </div>
+            {/* Video 5883.mov NOT THERE YET*/}
+            <iframe 
+                className="embed"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
             <div className="wider">
                 <p>{props.t('r2')}</p>
                 <ul className="list-spades">
@@ -59,9 +66,15 @@ function Robot(props) {
                     frameBorder="0">
                 </iframe>
             </div>
-            <div>
-                {/* Video robot on ground */}
-            </div>
+            {/* Video robot on ground */}
+            <iframe 
+                className="embed"
+                src="https://www.youtube.com/embed/UFwMoRBLNxw"
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
 
             <div>
                 <p>{props.t('r7')}</p>
@@ -78,6 +91,14 @@ function Robot(props) {
                 <p>{props.t('r9')}</p>
             </div>
             {/* Video prototype2 */}
+            <iframe 
+                className="embed"
+                src="https://www.youtube.com/embed/Q6N6rlf7yqI"
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
             
             <div>
                 <p>{props.t('r10')}</p>
@@ -86,6 +107,14 @@ function Robot(props) {
                 <img id='staticRabbit' width="60%" src={require("../assets/media/images/3dprintersetup.jpg")} alt="UpRabbit"/>
             </div>
             {/* Video 5553 */}
+            <iframe 
+                className="embed"
+                src="https://www.youtube.com/embed/SOBLcYnDarU"
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>{/*  */}
 
             <div>
                 <p>{props.t('r11')}</p>

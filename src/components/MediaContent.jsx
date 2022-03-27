@@ -31,6 +31,7 @@ const populateJsx = (props, id) => {
         case 2:
             if (props.media2 === "0" && props.vid !== "0") {
                 ret = <iframe 
+                        className="embed"
                         src={props.vid} 
                         title="YouTube video player" 
                         frameborder="0" 
