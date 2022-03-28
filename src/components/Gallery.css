@@ -39,6 +39,8 @@
 
 @media (max-width: 768px) {
     .polaroid-card {
-        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        /* padding: 0; */
     }
 }

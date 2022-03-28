@@ -8,7 +8,7 @@
     /* max-width: 50%; */
     margin: 0 auto;
     display: flex;
-    direction: row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 2rem;
@@ -72,4 +72,10 @@
     background-color: #000;
     color: rgb(255, 0, 0);
     transform: rotateY(180deg);
+}
+
+@media (max-width: 768px) {
+    .cards {
+        font-size: 1rem;
+    }
 }
