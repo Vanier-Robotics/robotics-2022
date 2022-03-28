@@ -147,11 +147,8 @@ function Journey(props) {
                     <img id='downRabbit' style={{display: `none`}} src={require("../assets/media/images/drabbit.png")} alt="DownRabbit"/>      
                     </div>
                     <img id='hole' src={require("../assets/media/images/hole_f.png")} alt="hole"/>
-                    <p style={{color: `#FFF`, fontSize: `10px`}} >{props.t('✨Click me for some hidden magic!✨')}</p>
                 </div>
-            </div>
-            {/* </div> */}
-            
+            </div>            
         </div>
     );
 }

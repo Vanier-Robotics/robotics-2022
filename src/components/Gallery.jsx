@@ -494,7 +494,7 @@ function Gallery(props) {
             <span className="banner" >
                 <h1 className="titleArcanum">{props.t('We\'re all mad here!')}</h1>
             </span>
-            <div className="embed">
+            {/* <div className="embed"> */}
             <iframe 
                 title="embed" 
                 // style={{borderRadius:`25px`}} 
@@ -505,7 +505,7 @@ function Gallery(props) {
                 allowFullScreen="" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             ></iframe>
-            </div>
+            {/* </div> */}
             
             <div className="cards image">
                 {
