@@ -5,9 +5,15 @@
 
 .cards {
     text-align: center;
-    width: 80%;
+    /* width: 80%; */
     /* max-width: 50%; */
     margin: 0 auto;
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    /* line-height: 2rem; */
 }
 
 .advice {

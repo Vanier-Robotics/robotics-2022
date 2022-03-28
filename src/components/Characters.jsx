@@ -347,9 +347,9 @@ function Characters(props) {
     ]
 
     return (
-        <div className="Characters page" >
+        <div className="Characters page contents-page" >
             {/* <h1 style={{margin: `0px`, height: `10%`}} >Our Characters</h1> */}
-            <div className="cards">
+            <div className="cards image">
                 {
                     teams.map((t) => {
                         return (

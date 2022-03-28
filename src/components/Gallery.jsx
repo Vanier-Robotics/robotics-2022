@@ -485,93 +485,29 @@ function Gallery(props) {
             caption: props.t('Good old Alex'),
         },
     ]
-    
+    var sections = [
+        accomplishments, delving, insane, shan, hectic, babysitting, chairs, chaos, ourselves, forgotten
+    ]
     
     return (
-        <div className="Gallery page">
+        <div className="Gallery page contents-page">
             <span className="banner" >
                 <h1 className="titleArcanum">{props.t('We\'re all mad here!')}</h1>
             </span>
+            <div className="embed">
             <iframe 
                 title="embed" 
-                style={{borderRadius:`25px`}} 
+                // style={{borderRadius:`25px`}} 
                 src="https://open.spotify.com/embed/playlist/0Kancw0BHelk6f15BCL8ir?utm_source=generator&theme=0" 
-                width="300px" 
-                height="500px" 
                 frameBorder="0" 
                 allowFullScreen="" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             ></iframe>
-            <div className="cards">
+            </div>
+            
+            <div className="cards image">
                 {
-                    accomplishments.map((i) => {
-                        return (
-                            <Polaroid media={i.media} caption={i.caption} alt={i.alt} />
-                        );
-                    })
-                }
-                {
-                    delving.map((i) => {
-                        return (
-                            <Polaroid media={i.media} caption={i.caption} alt={i.alt} />
-                        );
-                    })
-                }
-                {
-                    insane.map((i) => {
-                        return (
-                            <Polaroid media={i.media} caption={i.caption} alt={i.alt} />
-                        );
-                    })
-                }
-                {
-                    shan.map((i) => {
-                        return (
-                            <Polaroid media={i.media} caption={i.caption} alt={i.alt} />
-                        );
-                    })
-                }
-                {
-                    hectic.map((i) => {
-                        return (
-                            <Polaroid media={i.media} caption={i.caption} alt={i.alt} />
-                        );
-                    })
-                }
-                {
-                    babysitting.map((i) => {
-                        return (
-                            <Polaroid media={i.media} caption={i.caption} alt={i.alt} />
-                        );
-                    })
-                }
-                {
-                    chairs.map((i) => {
-                        return (
-                            <Polaroid media={i.media} caption={i.caption} alt={i.alt} />
-                        );
-                    })
-                }
-                {
-                    chaos.map((i) => {
-                        return (
-                            <Polaroid media={i.media} caption={i.caption} alt={i.alt} />
-                        );
-                    })
-                }
-                {
-                    ourselves.map((i) => {
-                        return (
-                            <Polaroid media={i.media} caption={i.caption} alt={i.alt} />
-                        );
-                    })
-                }
-                {
-                    forgotten.map((i) => {
-                        return (
-                            <Polaroid media={i.media} caption={i.caption} alt={i.alt} />
-                        );
-                    })
+                    sections.map (s => s.map (i => (<Polaroid media={i.media} caption={i.caption} alt={i.alt} />)))
                 }
             </div>
         </div>
