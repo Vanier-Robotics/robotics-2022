@@ -1,5 +1,6 @@
 .Characters {
     background-image: url("../assets/media/images/BG4characters.png");
+    background-position: 100% 0;
 }
 
 .cards {
@@ -7,10 +8,6 @@
     width: 80%;
     /* max-width: 50%; */
     margin: 0 auto;
-}
-
-.contentBlurb {
-
 }
 
 .advice {

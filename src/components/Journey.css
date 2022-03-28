@@ -1,5 +1,6 @@
 .Journey {
     background-image: url("../assets/media/images/BG5downtherabbithole.png");
+    background-position: center;
 }
 .pairs {
     display: flex;
