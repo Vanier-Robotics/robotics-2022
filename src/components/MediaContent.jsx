@@ -3,16 +3,20 @@ import React from 'react';
 export default function MediaContent(props) {
     var mediajsx = populateJsx(props, 1);
     var media2jsx = populateJsx(props, 2);
+    var mediablurb = (
+        <div className="mediaBlurb image">
+        {mediajsx}
+        {media2jsx}
+        </div>
+    )
+
     return (
         <div className='pairs'>
             <div className='contentBlurb'>
                 <span className='header'>{props.header}</span>
                 <p className="">{props.content}</p>
             </div>
-            <div className="mediaBlurb">
-                {mediajsx}
-                {media2jsx}
-            </div>
+            {(mediajsx || media2jsx) ? mediablurb : <></>}
 
         </div>
     );
@@ -23,7 +27,7 @@ const populateJsx = (props, id) => {
     switch (id) {
         case 1:
             if (props.media === "0") {
-                ret = <></>;
+                ret = null;
             } else {
                 ret = <img src={props.media} alt={props.alt}/>;
             }
@@ -39,7 +43,7 @@ const populateJsx = (props, id) => {
                         allowfullscreen>
                         </iframe>;
             } else if (props.media2 === "0" && props.vid === "0") {
-                ret = <></>;
+                ret = null;
             } else {
                 ret = <img src={props.media2} alt={props.alt}/>;
             }

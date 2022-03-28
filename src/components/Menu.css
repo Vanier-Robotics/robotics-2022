@@ -1,6 +1,5 @@
 .Menu {
     background-image: url("../assets/media/images/BG_3.png");
-    background-position: center;
 }
 
 .buttons-container {
@@ -11,6 +10,7 @@
     margin-left: auto;
     margin-right: auto;
     gap: 2rem;
+    padding: 4rem 0;
 }
 
 .menuitem {
@@ -29,7 +29,7 @@
     transition: transform 250ms, filter 200ms;
     transition-timing-function: ease-in-out;
     order: 1;
-    filter: contrast(0) hue-rotate(0) brightness(1000%);
+    /* filter: contrast(0) hue-rotate(0) brightness(1000%); */
 }
 
 .label {
@@ -49,13 +49,13 @@
 }
 
 .menuitem:nth-child(odd):hover > .menuimage {
-    transform: scale(1.35) rotate(-45deg);
-    filter: none;
+    transform: scale(1.15) rotate(-45deg);
+    /* filter: none; */
 }
 
 .menuitem:nth-child(even):hover > .menuimage {
-    transform: scale(1.35) rotate(45deg);
-    filter: none;
+    transform: scale(1.15) rotate(45deg);
+    /* filter: none; */
 }
 
 @media screen and (max-width: 800px) {

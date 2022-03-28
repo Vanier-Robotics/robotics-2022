@@ -1,6 +1,5 @@
 .Journey {
     background-image: url("../assets/media/images/BG5downtherabbithole.png");
-    background-position: center;
 }
 .pairs {
     display: flex;
@@ -16,17 +15,21 @@
     flex-grow: 2;
     /* max-width:60%; */
 }
-/* .pairs > .mediaBlurb {
-    max-width: 30%;
-} */
-/* .pairs > * {
-    max-width: 50%;
-} */
+.pairs > .mediaBlurb {
+    /* flex-grow: 2; */
+    /* width:100%; */
+    /* max-width:60%; */
+    min-width:40%;
+}
 
 .mediaBlurb > img, .mediaBlurb > iframe {
     border-radius: 25px;
     width: 100%;
-    /* border: 8px outset #FFF !important; */
+}
+
+.pairs > .mediaBlurb.embed {
+    /* width: 40%; */
+    width: 100%;
 }
 
 .pairs:nth-child(even) > .contentBlurb {
@@ -34,6 +37,15 @@
 }
 .pairs:nth-child(odd) > .contentBlurb {
     order: -1;
+}
+#bunny {
+    flex-direction: column !important;
+    justify-content: center;
+}
+
+#bunny img{
+    width: 100px;
+    /* width: auto; */
 }
 
 @media (max-width: 1043px) {

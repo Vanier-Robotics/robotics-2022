@@ -1,6 +1,6 @@
 .BG {
     pointer-events: none;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -20,25 +20,97 @@
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: nowrap;
-    height: 100%;
+    /* height: 80%; */
+    margin: 0 auto;
+    gap: 1em;
+    padding: 1rem;
 }
+.container > div {
+    width: 80%;
+    margin: 0 auto;
 
+}
+/* .row2 >h1 {
+    text-align: left;
+} */
 .row1, .row3 {
     align-self: center;
 }
+.row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    
+    color: white;
+    text-decoration: none;
+    font-size: 3em;
 
+    
+}
+.container a {
+    text-decoration: none;
+}
+.row {
+    
+}
 .vial, .cake {
-    height: 200px;
+    height: 150px;
 }
 .title {
     height: 500px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Cormorant+Garamond:wght@300&family=Spirax&display=swap');
 
 h1 {
     font-family: 'Alice', serif;
     /* -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: rgb(0, 0, 0); */
     color: #FFF;
+}
+
+h1, h2 {
+    color: white;
+    font-weight: normal;
+    margin: 0;
+}
+
+.container span, .container h2 {
+    filter: drop-shadow(0 30px 15px black);
+}
+.alice {
+    font-family: 'Alice', serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 100;
+}
+.spirax {
+    font-family: 'Spirax', cursive;
+    text-transform: uppercase;
+}
+.ornaments {
+    font-size:1em;
+}
+/* .ornaments::before, .ornaments::after {
+    content: url('../assets/media/images/ornament.png');
+    width: 10%;
+    display: block;
+} */
+
+@media screen and (max-width: 850px) {
+    .alice, .ornaments, .spirax {
+        font-size: 0.5em;
+    }
+    .row {
+        font-size: 1em;
+    }
+    .container {
+        padding: 2em;
+    }
+    .container > div {
+        width: 100%;
+        margin: 0 auto;
+    
+    }
 }

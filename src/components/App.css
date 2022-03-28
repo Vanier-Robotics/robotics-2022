@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Cormorant&family=EB+Garamond&family=Spirax&display=swap');
+
 body {
     font-family: 'Alice', serif;
     font-size: 50px;
@@ -34,6 +36,11 @@ body {
     background-repeat: no-repeat;
     color: #FFF;
     padding: 1rem 0;
+    background-position: center;
+}
+
+.page.bg-right {
+    background-position: right;
 }
 
 .header {
@@ -98,8 +105,13 @@ body {
 
 .embed iframe {
     width: 100%;
+    height: 100%;
+    border-radius: 25px;
 }
-
+.embed {
+    min-height: 60vh;
+    border-radius: 25px;
+}
 .image img {
     /* max-width: 30%; */
     /* max-height: 40vh; */

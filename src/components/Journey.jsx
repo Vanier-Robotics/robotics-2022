@@ -3,15 +3,14 @@ import './Journey.css';
 import { withNamespaces } from 'react-i18next';
 import MediaContent from './MediaContent';
 
-// function hide() {
-//     document.getElementById('staticRabbit').style.display = 'none';
-//     document.getElementById('downRabbit').style.display = 'block';
-//     // document.getElementById('downRabbit').style.marginBottom = `20px`;
-// }
-// function show() {
-//     document.getElementById('staticRabbit').style.display = 'block';
-//     document.getElementById('downRabbit').style.display = 'none';
-// }
+function hide() {
+    document.getElementById('staticRabbit').style.display = 'none';
+    document.getElementById('downRabbit').style.display = 'unset';
+}
+function show() {
+    document.getElementById('staticRabbit').style.display = 'unset';
+    document.getElementById('downRabbit').style.display = 'none';
+}
 
 function Journey(props) {
     //D9 media 1 is MOV 5792 on drive
@@ -132,7 +131,8 @@ function Journey(props) {
                     );
                 })
             }
-            {/* <button style={{marginBottom: `50px`, border: `0px solid black`, backgroundColor: `transparent`}} onClick={() => {
+            {/* <div className='image'> */}
+            <div id="bunny" className='image' onClick={() => {
                 props.showSidebar();
                 //bg transparent for bunny and disappears when clicked
                 document.getElementById('staticRabbit').style.display = 'none';
@@ -141,13 +141,17 @@ function Journey(props) {
                     document.getElementById('gallery').style.display = 'block';
                 } , 1500);
             }} >
-                <span onMouseOver={hide} onMouseOut={show} style={{width: `100%`, display: `flex`, flexDirection: `column`, margin: `0`}}>
-                    <img id='staticRabbit' width="200px" src={require("../assets/media/images/rabbit.png")} alt="UpRabbit"/>
-                    <img id='downRabbit' style={{display: `none`}}  width="200px" src={require("../assets/media/images/drabbit.png")} alt="DownRabbit"/>
-                    <img id='hole'  width="200px" src={require("../assets/media/images/hole_f.png")} alt="hole"/>
+                <div onMouseOver={hide} onMouseOut={show} >
+                    <div>
+                    <img id='staticRabbit' src={require("../assets/media/images/rabbit.png")} alt="UpRabbit"/>
+                    <img id='downRabbit' style={{display: `none`}} src={require("../assets/media/images/drabbit.png")} alt="DownRabbit"/>      
+                    </div>
+                    <img id='hole' src={require("../assets/media/images/hole_f.png")} alt="hole"/>
                     <p style={{color: `#FFF`, fontSize: `10px`}} >{props.t('✨Click me for some hidden magic!✨')}</p>
-                </span>
-            </button> */}
+                </div>
+            </div>
+            {/* </div> */}
+            
         </div>
     );
 }

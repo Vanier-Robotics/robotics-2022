@@ -15,6 +15,7 @@ function Robot(props) {
                 <img id='staticRabbit' width="60%" src={require("../assets/media/images/robot.jpg")} alt="UpRabbit"/>
             </div>
             {/* Video 5883.mov NOT THERE YET*/}
+            <div className="embed">
             <iframe 
                 className="embed"
                 src="https://www.youtube.com/embed/onOpHBWF-oA"
@@ -23,6 +24,8 @@ function Robot(props) {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
             </iframe>
+            </div>
+            
             <div className="wider">
                 <p>{props.t('r2')}</p>
                 <ul className="list-spades">
@@ -67,6 +70,7 @@ function Robot(props) {
                 </iframe>
             </div>
             {/* Video robot on ground */}
+            <div className="embed">
             <iframe 
                 className="embed"
                 src="https://www.youtube.com/embed/UFwMoRBLNxw"
@@ -75,6 +79,8 @@ function Robot(props) {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
             </iframe>
+            </div>
+            
 
             <div>
                 <p>{props.t('r7')}</p>
@@ -91,6 +97,7 @@ function Robot(props) {
                 <p>{props.t('r9')}</p>
             </div>
             {/* Video prototype2 */}
+            <div className="embed">
             <iframe 
                 className="embed"
                 src="https://www.youtube.com/embed/Q6N6rlf7yqI"
@@ -99,6 +106,8 @@ function Robot(props) {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
             </iframe>
+            </div>
+            
             
             <div>
                 <p>{props.t('r10')}</p>
@@ -107,6 +116,7 @@ function Robot(props) {
                 <img id='staticRabbit' width="60%" src={require("../assets/media/images/3dprintersetup.jpg")} alt="UpRabbit"/>
             </div>
             {/* Video 5553 */}
+            <div className="embed">
             <iframe 
                 className="embed"
                 src="https://www.youtube.com/embed/SOBLcYnDarU"
@@ -115,6 +125,8 @@ function Robot(props) {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
             </iframe>{/*  */}
+            </div>
+            
 
             <div>
                 <p>{props.t('r11')}</p>

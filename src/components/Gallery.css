@@ -1,15 +1,15 @@
 .Gallery {
     background-image: url("../assets/media/images/BG_3.png");
     text-align: center;
-    background-position: center;
 }
 
 .polaroid-card {
     color: #000;
-    width: 40%;
+    max-width: 25%;
     background-color: #FFF;
     margin: 30px;
     display: inline-block;
+    padding:1rem;
 }
 
 .img-wrapper {
@@ -21,13 +21,20 @@
 
 .img-wrapper > img {
     width: 100%;
-    padding: 30px 20px 0px;
+    /* padding: 30px 20px 0px; */
+    /* padding: 1.5rem; */
     margin: 0;
 }
 
 .caption-wrapper > p {
-    margin: 20px 0 20px;
+    /* margin: 20px 0 20px; */
+    margin: 0;
+    /* padding: 1rem; */
     font-size: 1.5rem;
+}
+
+.cards.image img {
+    border-radius: 0;
 }
 
 @media (max-width: 768px) {
