@@ -33,23 +33,42 @@ function Home(props) {
         <>
             <img id="Dark" className="BG show" alt="Dark BG here" src={require("../assets/media/images/landing.png")}/>
             <img id="Light" className="BG hide" alt="Light BG here" src={require("../assets/media/images/pinklanding.png")}/>
-            <div className="container" >
-                <div className="row1" >
+            <div className="container">
+                <div>
+                    <Link onMouseOver={hide} onMouseOut={show} onClick={toEn} to="/menu">
+                        <div className="row">
+                            <span>English</span>
+                            <img className="cake" alt="Cake here" src={require("../assets/media/images/cookie.png")} />
+                        </div>
+                    </Link>
+                </div>
+                <div className="row2">
+                    <h1><span className="alice">alice</span> <span className="spirax">in<br/>vanierland</span></h1>
+                    <h2 className="ornaments">vanier robotics 2022</h2>
+                    {/* <img className="title" alt="title here" src={require("../assets/media/images/title1.png")}/> */}
+                </div>
+                <div >
+                    <Link onMouseOver={hide} onMouseOut={show} onClick={toFr} to="/menu">
+                        <div className="row">
+                            <img className="vial" alt="Vial here" src={require("../assets/media/images/bottle.png")}/>
+                            <span>French</span>
+                        </div>
+                    </Link>
+                </div>
+                {/* <div className="row1" >
                     <Link onMouseOver={hide} onMouseOut={show} onClick={toEn} to="/menu">
                         <img className="cake" alt="English" src={require("../assets/media/images/en.png")} />
-                        <img className="cake" alt="Cake here" src={require("../assets/media/images/cookie.png")} />
+                        
                         
                     </Link>
                 </div>
-                <div className="row2" >
-                    <img className="title" alt="title here" src={require("../assets/media/images/title1.png")}/>
-                </div>
+                
                 <div className="row3" >
                     <Link onMouseOver={hide} onMouseOut={show} onClick={toFr} to="/menu">
-                        <img className="vial" alt="Vial here" src={require("../assets/media/images/bottle.png")}/>
+                        
                         <img className="vial" alt="French" src={require("../assets/media/images/fr.png")} />
                     </Link>
-                </div>
+                </div> */}
                 
             </div>
 

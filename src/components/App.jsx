@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import './App.css';
@@ -17,7 +17,6 @@ import Gallery from "./Gallery"
 export default function App() {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
-
     return (
         <Router hashType="hashbang">
             <div className="App">
