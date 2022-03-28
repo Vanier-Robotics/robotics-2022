@@ -104,7 +104,8 @@ body {
 }
 
 .embed iframe {
-    width: 100%;
+    /* width: 100%; */
+    width: 80%;
     height: 100%;
     border-radius: 25px;
     min-height: 60vh;
@@ -119,6 +120,8 @@ body {
     height: auto;
     width: 100%;
     border-radius: 25px;
+    max-height: 60vh;
+    width: auto
 }
 
 .contents-page ul {
