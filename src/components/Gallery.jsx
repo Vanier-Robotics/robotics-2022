@@ -284,7 +284,7 @@ function Gallery(props) {
         {
             media: require("../assets/media/images/gallery/adventures-babysitting/c_ck-of-the-rock_(that_s_the_real_name...).jpg"),
             alt: "image",
-            caption: props.t('Coq of the rock (that\'s the real name...)'),
+            caption: props.t('\'Cock of the rock\' (that\'s the real name...)'),
         },
         {
             media: require("../assets/media/images/gallery/adventures-babysitting/torak.jpg"),
@@ -496,7 +496,7 @@ function Gallery(props) {
                 title="embed" 
                 style={{borderRadius:`25px`}} 
                 src="https://open.spotify.com/embed/playlist/0Kancw0BHelk6f15BCL8ir?utm_source=generator&theme=0" 
-                width="300px" 
+                width="350px" 
                 height="500px" 
                 frameBorder="0" 
                 allowFullScreen="" 

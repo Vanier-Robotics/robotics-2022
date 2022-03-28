@@ -25,6 +25,12 @@ function Jackpot(props) {
             <div>
                 <p>{props.t('j5')}</p>
             </div>
+            <div className="image">
+                <img alt="title here" src={require("../assets/media/images/vcsa_support.png")}/>
+            </div>
+            <div>
+                <p>{props.t('j6')}</p>
+            </div>
 
             <div className="image background">
                 <a className="wapper" rel="noreferrer" target="_blank" href="https://www.vaniercollege.qc.ca/">
@@ -35,7 +41,7 @@ function Jackpot(props) {
                 </a>
             </div>
             
-            <br/><br/><br/>
+            <br/><br/>
         </div>
     );
 }
