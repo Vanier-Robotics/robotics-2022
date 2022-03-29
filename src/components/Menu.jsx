@@ -4,28 +4,25 @@ import { Link } from 'react-router-dom';
 import './Menu.css'
 
 function MenuItem(props) {
-    return (
-        <Link to={props.to} className="menuitem">
-            {/* <img className="menuimage" alt={props.alt} src={props.wsrc} width="300px" /> */}
-            <img className="menuimage" alt={props.alt} src={props.src} width="300px" />
-            <button className="label" >{props.name}</button>
-        </Link>
+    return ( <
+        Link to = { props.to }
+        className = "menuitem" > { /* <img className="menuimage" alt={props.alt} src={props.wsrc} width="300px" /> */ } <
+        img className = "menuimage"
+        alt = { props.alt }
+        src = { props.src }
+        width = "300px" / >
+        <
+        button className = "label" > { props.name } < /button> <
+        /Link>
     );
 }
 
 function Menu({ t }) {
-    var menu = [
-        {
+    var menu = [{
             to: "/",
             name: t('Home'),
             src: require("../assets/media/images/teapot_f.png"),
             alt: 'teapot',
-        },
-        {
-            to: "/journey",
-            name: t('Journey'),
-            src: require("../assets/media/images/watch_f.png"),
-            alt: "pinkcup"
         },
         {
             to: "/robot",
@@ -38,6 +35,12 @@ function Menu({ t }) {
             name: t("Arcanum"),
             src: require("../assets/media/images/hat_f.png"),
             alt: "hat"
+        },
+        {
+            to: "/journey",
+            name: t('Journey'),
+            src: require("../assets/media/images/watch_f.png"),
+            alt: "pinkcup"
         },
         {
             to: "/characters",
@@ -58,16 +61,20 @@ function Menu({ t }) {
             alt: "Crown"
         }
     ];
-    return (
-        <div className="Menu page">
-            <div className="buttons-container">
-                {
-                    menu.map((m) => {
-                        return <MenuItem name={m.name} to={m.to} src={m.src} alt={m.alt} />
-                    })
-                }
-            </div>
-        </div>
+    return ( <
+        div className = "Menu page" >
+        <
+        div className = "buttons-container" > {
+            menu.map((m) => {
+                return <MenuItem name = { m.name }
+                to = { m.to }
+                src = { m.src }
+                alt = { m.alt }
+                />
+            })
+        } <
+        /div> <
+        /div>
     );
 }
 export default withNamespaces()(Menu);
