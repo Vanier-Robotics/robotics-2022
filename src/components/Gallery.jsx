@@ -136,6 +136,12 @@ function Gallery(props) {
             vid: "0",
             caption: props.t('Forgotten compote au pomme'),
         },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/xInEBwrUjW4",
+            caption: props.t('vid2'),
+        },
     ]
     var insane = [
         {
@@ -192,6 +198,18 @@ function Gallery(props) {
             vid: "0",
             caption: props.t('Disciplining the troublesome captain'),
         },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/3F_H1gjgbL4",
+            caption: props.t('vid5'),
+        },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/9n8WVOzzL8k",
+            caption: props.t('vid6'),
+        }
     ]
     var shan = [
         {
@@ -236,6 +254,18 @@ function Gallery(props) {
             vid: "0",
             caption: props.t('Websites & Frustrations unearthed'),
         },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/8dV0J8KT9fs",
+            caption: props.t('vid3'),
+        },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/jbjnDdYSUrQ",
+            caption: props.t('vid4'),
+        }
     ]
     var hectic = [
         {
@@ -360,6 +390,12 @@ function Gallery(props) {
             vid: "0",
             caption: props.t('Talking back to the godmother'),
         },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/5z4BT8Ey03M",
+            caption: props.t('vid1'),
+        },
     ]
     var chairs = [
         {
@@ -466,6 +502,30 @@ function Gallery(props) {
             vid: "0",
             caption: props.t('Winter brawls'),
         },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/eEYvBay5P-Q",
+            caption: props.t('vid7'),
+        },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/hzqww0tBvSU",
+            caption: props.t('vid8'),
+        },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/XBQHWQsAx7M",
+            caption: props.t('vid10'),
+        },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/wF4yfqn_IkM",
+            caption: props.t('vid9'),
+        }
     ]
     var ourselves = [
         {
@@ -585,6 +645,50 @@ function Gallery(props) {
             caption: props.t('Good old Alex'),
         },
     ]
+    var tiktoks = [
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/yqj-2nC_N9E",
+            caption: props.t('tt1'),
+        },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/UgacLa_q0dM",
+            caption: props.t('tt2'),
+        },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/YV6aiui2iuc",
+            caption: props.t('tt3'),
+        },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/uLzEoBXu0uk",
+            caption: props.t('tt4'),
+        },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/6JfOVBt1p3Q",
+            caption: props.t('tt5'),
+        },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/oeQ2V75ZNNE",
+            caption: props.t('tt6'),
+        },
+        {
+            media: "0",
+            alt: "vid",
+            vid: "https://www.youtube.com/embed/yTjFbaXvqYc",
+            caption: props.t('tt7'),
+        },
+    ]
     var sections = [
         {
             folder: accomplishments,
@@ -626,6 +730,10 @@ function Gallery(props) {
             folder: forgotten,
             header: props.t("Honoring Those Often Forgotten: "),
         },
+        {
+            folder: tiktoks,
+            header: props.t("TikToks: "),
+        }
     ]
     
     return (

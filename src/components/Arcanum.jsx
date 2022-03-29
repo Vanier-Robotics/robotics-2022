@@ -20,7 +20,11 @@ function Arcanum(props) {
     var rules = [
         {
             text: props.t('a5'),
-            list: [{text: props.t('a6')}]
+            list: [{text: props.t('a51')}]
+        },
+        {
+            text: props.t('a6'),
+            list: []
         },
         {
             text: props.t('a7'),
