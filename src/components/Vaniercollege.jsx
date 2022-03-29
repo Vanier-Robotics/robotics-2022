@@ -27,7 +27,7 @@ function Vaniercollege(props) {
             <div>
                 <p>{props.t('v2')}</p>
             </div>
-            <a className="image" rel="noreferrer" target="_blank" href="https://www.vaniercollege.qc.ca/">
+            <a style={{width: `60%`}} className="image" rel="noreferrer" target="_blank" href="https://www.vaniercollege.qc.ca/">
                 <img alt="title here" src={require("../assets/media/images/vc.png")}/>
             </a>
         </div>

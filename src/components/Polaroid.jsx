@@ -6,7 +6,7 @@ function Polaroid(props) {
     return (
         <div className="polaroid-card" >
             <div className="img-wrapper" >
-                <img loading="lazy" src={props.media} alt={props.alt}/>
+                <img  src={props.media} alt={props.alt}/>
             </div>
             <div className="caption-wrapper" >
                 <p>{props.caption}</p>

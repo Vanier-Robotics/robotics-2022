@@ -2,6 +2,7 @@ import React from 'react';
 import './Journey.css';
 import { withNamespaces } from 'react-i18next';
 import MediaContent from './MediaContent';
+import { Link } from 'react-router-dom';
 
 function hide() {
     document.getElementById('staticRabbit').style.display = 'none';
@@ -16,7 +17,7 @@ function Journey(props) {
     //D9 media 1 is MOV 5792 on drive
     //D8 media 2 is MOV drive/tutorial/00001.mts
     //D12 media 2 is MOV ducttape
-    var placeholderVideo = 'https://www.youtube.com/embed/9POCgSRVvf0';
+    // var placeholderVideo = 'https://www.youtube.com/embed/9POCgSRVvf0';
     var pairs = [
         {
             header: props.t('d1h'),
@@ -132,23 +133,26 @@ function Journey(props) {
                 })
             }
             {/* <div className='image'> */}
-            <div id="bunny" className='image' onClick={() => {
-                props.showSidebar();
-                //bg transparent for bunny and disappears when clicked
-                document.getElementById('staticRabbit').style.display = 'none';
-                document.getElementById('downRabbit').style.display = 'none';
-                setTimeout(() => {
-                    document.getElementById('gallery').style.display = 'block';
-                } , 1500);
-            }} >
-                <div onMouseOver={hide} onMouseOut={show} >
-                    <div>
-                    <img id='staticRabbit' src={require("../assets/media/images/rabbit.png")} alt="UpRabbit"/>
-                    <img id='downRabbit' style={{display: `none`}} src={require("../assets/media/images/drabbit.png")} alt="DownRabbit"/>      
+            <Link to='/gallery'>
+                <div id="bunny" className='image' onClick={() => {
+                    props.showSidebar();
+                    //bg transparent for bunny and disappears when clicked
+                    document.getElementById('staticRabbit').style.display = 'none';
+                    document.getElementById('downRabbit').style.display = 'none';
+                    setTimeout(() => {
+                        document.getElementById('gallery').style.display = 'block';
+                    } , 1500);
+                }} >
+                    <div onMouseOver={hide} onMouseOut={show} >
+                        <div>
+                        <img id='staticRabbit' src={require("../assets/media/images/rabbit.png")} alt="UpRabbit"/>
+                        <img id='downRabbit' style={{display: `none`}} src={require("../assets/media/images/drabbit.png")} alt="DownRabbit"/>      
+                        </div>
+                        <img id='hole' src={require("../assets/media/images/hole_f.png")} alt="hole"/>
                     </div>
-                    <img id='hole' src={require("../assets/media/images/hole_f.png")} alt="hole"/>
                 </div>
-            </div>            
+            </Link>
+
         </div>
     );
 }

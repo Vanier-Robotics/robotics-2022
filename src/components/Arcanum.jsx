@@ -2,9 +2,6 @@ import React from "react";
 import { withNamespaces } from "react-i18next";
 import './Arcanum.css';
 
-
-
-
 function ListItem(props) {
     // var output;
     console.debug(props.list.length);
@@ -85,27 +82,17 @@ function Arcanum(props) {
                     }
                 </ul>
             </div>
-
-            {/* <div>
-                <p>{props.t('a5')}</p>
-            </div>
-            <div>
-                <p>{props.t('a6')}</p>
-            </div>
-            <div>
-                <p>{props.t('a7')}</p>
-            </div>
-            
-           
-            <div>
-                <p>{props.t('a8')}</p>
-            </div>
-            <div>
-                <p>{props.t('a9')}</p>
-            </div> */}
             <div>
                 <p>{props.t('a10')}</p>
             </div>
+            <iframe 
+                className="embed"
+                src="https://www.youtube.com/embed/6XT0Sf5PJDM" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
         </div>
     );
 }
