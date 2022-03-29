@@ -26,7 +26,7 @@ function Jackpot(props) {
                 <p>{props.t('j5')}</p>
             </div>
             <div className="image">
-                <img alt="title here" src={require("../assets/media/images/vcsa_support.png")}/>
+                <img alt="title here" src={require("../assets/media/images/survive.png")}/>
             </div>
             <div>
                 <p>{props.t('j6')}</p>
